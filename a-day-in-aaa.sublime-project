@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Play",
+			"cmd":
+			[
+				"renpy.sh",
+				"${project_path}"
+			]
+		}
+	]
+}
