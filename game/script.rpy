@@ -1,3 +1,3 @@
 ﻿label start:
-    jump sI_6
+    jump s1_6
     return
