@@ -3,7 +3,6 @@ label s1_6:
     jump .intro
 
 label .intro:
-    "Intro"
     scene bg open_space desktop
     play music open_space.quiet
 
