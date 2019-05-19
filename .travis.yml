@@ -15,7 +15,7 @@ install:
   - cd ..
   # only download renpy if not cached already
   - |
-    if [ ! -d "renpy-7.2.2-sdk" ]
+    if [ ! -d "renpy-7.2.2-sdk" ]; then
       wget https://www.renpy.org/dl/7.2.2/renpy-7.2.2-sdk.tar.bz2
       tar xf renpy-7.2.2-sdk.tar.bz2
       rm renpy-7.2.2-sdk.tar.bz2
