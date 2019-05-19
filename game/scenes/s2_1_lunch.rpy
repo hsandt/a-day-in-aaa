@@ -33,12 +33,4 @@ label .table_junior:
     "C ~ Yesterday I had 100 hours on Monster Hunter World..."
     "MC ~ Oh... (I think it was released last month?)"
     "(MC finishes eating, and goes back to his desk)"
-    jump .play_break
-
-label .play_break:
-    scene bg open_space desktop
-    play music open_space.quiet
-    "Play break"
-
-label .end:
-    "END"
+    jump s2_2
