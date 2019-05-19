@@ -1,13 +1,13 @@
-# based on https://gist.github.com/darkarcher117/60a6474d5fbb1632afd9
-
+# Ren'Py
 *.rpy[bc]
 *.rpym[bc]
+*.py[co]
 *.bak
 /errors.txt
-/log.txt
 /project.json
-/traceback.txt
 /game/saves
+log.txt
+traceback.txt
 
 # Sublime Text
 *.sublime-workspace
