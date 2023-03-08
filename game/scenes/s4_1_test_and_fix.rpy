@@ -41,7 +41,4 @@ label .work_end:
     "(MC finally finishes testing)"
     "(If you chose the quick solution in Scene I.6, the task ends here and MC asks a colleague for review)"
     "(Otherwise, the task is not over yet, and MC will have to finish later)"
-    jump .end
-
-label .end:
-    "END"
+    jump s4_4
