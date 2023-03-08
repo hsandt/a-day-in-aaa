@@ -10,7 +10,7 @@ label .intro:
 
 label .watch_play:
     "(Background should be other people playing)"
-    "(MC sees colleagues having fun on local multi-player games in competition)"
+    "(MC sees colleagues having fun on local multi-player games in competition, and others playing indie)"
     "(MC could probably have a decent coop play but gives up on competition and prefers playing alone)"
     jump .play_game
 
@@ -31,7 +31,4 @@ label .break_end:
     "(MC automatically chooses to continue playing despite going over the break end time)"
     "(However, MC sees people around him stop playing and gets worried he gives a bad image.)"
     "(Eventually, MC stops playing and gets back to work)"
-    jump .end
-
-label .end:
-    "END"
+    jump s4_1
