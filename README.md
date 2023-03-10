@@ -5,11 +5,11 @@ A Visual Novel made with Ren'Py about a junior game programmer working in AAA co
 ## Progress
 
 * Project setup
-* Scene 1.6 and 2.1 structures
+* A few scene drafts
 
 ## Tools
 
-* Ren'Py 7.1.3
+* Ren'Py 8.0.3
 * Sublime Text
 
 ## Assets copyright

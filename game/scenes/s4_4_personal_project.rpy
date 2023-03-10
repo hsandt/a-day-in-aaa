@@ -3,8 +3,7 @@ label s4_4:
     jump .intro
 
 label .intro:
-    # uncomment when bg is ready
-    # scene bg apartment desktop
+    scene bg apartment desktop
     # uncomment when music is ready
     # play music apartment.music
 
