@@ -3,32 +3,51 @@ label s2_2:
     jump .intro
 
 label .intro:
+    # TODO: replace with open space overview
     scene bg open_space desktop
     play music open_space.quiet
 
     jump .watch_play
 
 label .watch_play:
-    "(Background should be other people playing)"
-    "(MC sees colleagues having fun on local multi-player games in competition, and others playing indie)"
-    "(MC could probably have a decent coop play but gives up on competition and prefers playing alone)"
+    "When I enter the room, I see some of my colleagues playing online together on free-to-play, and others playing solo indie games."
+    "I haven't played online for a while, yet alone the recent titles, so I don't think I'll be able to withstand the competition."
+    "So I'll just pick a solo game today, as usual."
     jump .play_game
 
 label .play_game:
-    "(MC starts playing a game alone)"
-    "(MC automatically chooses Starcraft II)"
-    "(MC plays for some time)"
+    "(INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II)"
+    "Let's go with Starcraft II today."
+    "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."
+    "But what do you want? I hadn't played Starcraft since Brood War in the 2000s, so my RTS-fu is a little rusty."
+    "I feel like I improved since last time though, so I try a versus AI at Hard difficulty."
+    "How can I hope playing online if I can't even beat the AI?"
+    "I get crushed."
+    "I turn to my knowledgeable colleague for advice. 'Disappointing', he says."
+    "'You need to memorize your build order. Your build order!'"
     jump .colleagues_arrive
 
 label .colleagues_arrive:
-    "(Colleagues arrive from various clubs and explain they have been practicing healthy or artistic activities)"
-    "(While still playing, MC hears the conversation and thinks he should do the same, but doesn't feel the courage to go out at noon)"
-    "(MC thinks at least, people are not criticized for playing all noon here. But it is double-edged)"
+    "As the end of lunch break draws nearer, I see more and more colleagues coming back to the room."
+    gd "So, how was the gym?"
+    artist "Good, good. Well, one machine was out of order, so I adapted my training set."
+    artist "And you? Was improv fun?"
+    gd "Totally! A new member joined, and he sure has knacky lines!"
+    "I realize how other developers have regularly been practicing healthy or artistic activities. Maybe I should join a club too?"
+    "... or I could keep sitting here and playing every noon, as usual."
+    "Thinking of it, it's great that we are all adults and we can just do what we want on our spare time."
+    "But sometimes I'd need some life coach to get me to do more varied things, as I used to at school."
+    "OK, I got a few minutes left. Ready for another versus?"
     jump .break_end
 
 label .break_end:
-    "(The break is over, but MC is still playing as the Starcraft session was harder than expected)"
-    "(MC automatically chooses to continue playing despite going over the break end time)"
-    "(However, MC sees people around him stop playing and gets worried he gives a bad image.)"
-    "(Eventually, MC stops playing and gets back to work)"
+    "Before I notice, break time is over, but I haven't finished my game yet. The opponent is tougher than expected."
+    "(INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing)"
+    "Believing in my incoming victory, I push the game a little further. But it's now quarter past two and I'm still far from it."
+    "Should I just give up?"
+    "The mood slowly changing in the room. People are getting back to work, speaking less and typing more."
+    "I quickly glance at the room to check that nobody cares about me."
+    "They don't, yet as time goes on, I feel an invisible pressure growing on my back."
+    "Eventually, I manage to grab my victory (nothing to be proud of, I set the AI to Medium this time) –"
+    "– and at the same time my peace of mind, as I close my game and open Visual Studio."
     jump s4_1
