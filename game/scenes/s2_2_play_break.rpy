@@ -20,19 +20,26 @@ label .play_game:
     "Let's go with Starcraft II today."
     "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."
     "But what do you want? I hadn't played Starcraft since Brood War in the 2000s, so my RTS-fu is a little rusty."
-    "I feel like I improved since last time though, so I try a versus AI at Hard difficulty."
-    "How can I hope playing online if I can't even beat the AI?"
+    "I feel like I improved since last time though, so I try a versus AI at Hard difficulty – how can I hope playing online if I can't even beat the AI?"
     "I get crushed."
-    "I turn to my knowledgeable colleague for advice. 'Disappointing', he says."
-    "'You need to memorize your build order. Your build order!'"
+    "I turn to my knowledgeable colleague for advice.\n'Disappointing', he says."
+    "'You need to memorize your build order. Your {b}build order{/b}!'"
     jump .colleagues_arrive
 
 label .colleagues_arrive:
     "As the end of lunch break draws nearer, I see more and more colleagues coming back to the room."
-    gd "So, how was the gym?"
-    artist "Good, good. Well, one machine was out of order, so I adapted my training set."
-    artist "And you? Was improv fun?"
-    gd "Totally! A new member joined, and he sure has knacky lines!"
+
+    programmer "So, how was the gym?"
+    artist "It was fine, but the leg machine was broken. AGAIN."
+    programmer "Like our codebase."
+    artist "And you? How was improv?"
+    programmer "Great! The new guy had some hilarious rejoinders!"
+
+    # Alternative dialogue
+    # programmer "So, how was the gym?"
+    # artist "Fine, but the leg machine was broken, so I had to improvize. Speaking of, how was the improv club?"
+    # programmer "Great! The new guy had some hilarious rejoinders!"
+
     "I realize how other developers have regularly been practicing healthy or artistic activities. Maybe I should join a club too?"
     "... or I could keep sitting here and playing every noon, as usual."
     "Thinking of it, it's great that we are all adults and we can just do what we want on our spare time."
