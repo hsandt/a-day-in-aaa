@@ -4,7 +4,7 @@
 
 image bg open_space desktop = "images/bg/open_space_desktop.png"
 image bg eating_space = im.Scale("images/bg/eating_space.png", 1920, 1080)  # fix until we get final picture in 1080p
-image bg apartment desktop = im.Scale(im.Scale("images/bg/apartment_desktop.jpg", 16, 9), 1920, 1080)
+image bg apartment desktop = im.Scale("images/bg/apartment_desktop.jpg", 1920, 1080)
 
 # Audio
 
