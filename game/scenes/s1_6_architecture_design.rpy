@@ -8,7 +8,7 @@ label .intro:
 
     # where I am, who I am, when I am, what I'm supposed to do
     "The weekly meeting was pretty efficient this morning. We summed up project status on the game, I got assigned a new programming task and we ate a dozen chocolates."
-    "The project is third-person action-adventure game, so expect the player character to have a variety of moves at his disposal. My task is to implement a combo detection system."
+    "The project is an open-world third-person action-adventure game, so expect the player character to have a variety of moves at his disposal. My task is to implement a combo detection system."
     "No, not a combo system that allows the player character to chain cool moves together. Just a system that detects when the player chained certain actions within a certain time frame."
     "The former would be cooler, but I guess the leads are not ready to give me such responsibility."
 

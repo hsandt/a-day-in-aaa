@@ -6,31 +6,54 @@ label .intro:
     scene bg open_space desktop
     play music open_space.quiet
 
-    jump .back_to_work
-
-label .back_to_work:
-    "(MC goes back to his desk)"
-    jump .lead_designer_comes_back
-
-label .lead_designer_comes_back:
-    "(The lead designer comes back from a meeting where he thinks the producer has been pushing and rejecting features childishly)"
-    "(The other designers show their sympathy and swear at the producer, but the lead decides to keep compromising to find the best middle ground for his team, and keep his job)"
-    "(MC found the producer nice when he presented the game before, so he's surprised and suspect him of having a dual personality)"
-    "(MC doesn't add to the complaints and prefers keeping a low profile)"
-    "(In a sense, he protects them as they are free to keep on working without feeling like they are selling their souls)"
-    "(The other designers have varied attitudes, some are indifferent and pragmatic, they know AAA works like that; some are hopeful they can do something to change it because 'it's our job to make the game better')"
-    "(They note that some people start hopeful when they enter the company, and end up desperate, while others do the opposite. MC wonders which category he is in, but since he read articles on AAA before, he was not too surprised, nor too desperate)"
     jump .testing
 
 label .testing:
-    "(MC tests what he wrote in the morning, spots a few remaining bugs and fixes them)"
-    "(However, this requires several iterations and MC complains about the long compile time)"
-    "(Some developers use the compile time to watch videos or read comics, some have funny or serious talks, but MC prefers studying more programming languages and tools)"
-    "(MC wonders if he's not crazy inserting more work time between work times)"
-    "(But if feels good studying and learning new things as in the University)"
+    "I spend a few hours coding the new feature, using the architecture I considered this morning."
+    "I spot a few bugs in my first implementation, so I go through a few more iterations to improve the code."
+    "My biggest issue, as usual, is that it takes a lot of time to recompile the code after each change to test it."
+    "Fortunately, there are always things to do during the compilation. Some watch videos or read comics, some chat with their colleagues."
+    "In my case, I like reading programming articles or books. I know it sounds crazy inserting more work inside work, but it keeps me in the flow."
+    jump .lead_designer_comes_back
+
+label .lead_designer_comes_back:
+    associate_lead_gd "Hey!"
+    "... at least, until somebody comes. I turn around my chair and see an enthusiastic associate lead game designer."
+    "While the open space is flat, the hierarchy is still prominent as you'd expect, so the big leads rarely come as far as this corner of the studio."
+    "On the contrary, it's pretty common that associate leads directly talk to us."
+    "In this case though, he was addressing his fellow designers."
+
+    gd "How was the meeting?"
+    associate_lead_gd "Not bad... I showed them my proposal for gradual loot quality increase over play time."
+    gd "Let me guess... the producer rejected it with no good reason?"
+    associate_lead_gd "Not exactly... He just redrew the curve a little to make sure players spend a little more time playing before they get better gear."
+    associate_lead_gd "Four hours here... Five hours there..."
+    gd "That's ridiculous. We talked about one hour last time. Typical of mindless RPG-ization."
+    gd "The point of progression design is to increase the game's lifespan, but it doesn't help if the player gets bored and drops before the end."
+
+    "So, usually, the producer's job is to make sure the team can properly work on the product and release it in time."
+    "But here, anyone with a high place in the hierarchy can give their opinion on anything."
+    "Which would be great... if the process was democratized and led to actual discussions."
+
+    associate_lead_gd "Also, he pushed a request to add paragliding. He found it cool when he tried Alpha Legend the other day."
+    gd "The game that was released last week? Okay, sure, but we've already designed most of the map with simple climbing and jumping abilities in mind."
+    gd "Adding paragliding would break the level design!"
+
+    "Now I'm surprised. I can understand a little tweak here and there, but it's hard for me to believe the producer would go that far. I mean, when I saw him during the big meeting with everyone, he looked nice."
+    "From twenty meters away."
+
+    associate_lead_gd "I tried to explain that, but we'll need the lead level designer's support on this."
+    gd "Okay, let's have a talk with her."
+
+    "I see, so the associate leads act like a bridge between the top management and their team."
+    "Or rather, they act like a shield, doing all the negotiations to find the best middle ground for their team."
+    "In other words, they do more compromises, and allow their team to keep their integrity. And also swear when they want."
+    "I suppose the job is less stressful in studios with better executives."
+    "On my side, I prefer keeping a low profile and just get the job done. But if I was a designer, I'm not sure I'd be able to keep cool like that."
     jump .satisfaction
 
 label .satisfaction:
+    "(But if feels good studying and learning new things as in the University)"
     "(Thinking back at University, MC remembers he learned to a lot to avoid the past mistakes of other companies making games that turned bad when he was a child)"
     "(MC felt weak at the time and swore he'd become strong enough to change this. But now, he's still a mere employee and nothing really changed)"
     "(MC knows that he's just a junior, but he doesn't want to feel like one, esp. after working on student games handling most of the programming before.)"

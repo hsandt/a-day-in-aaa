@@ -11,6 +11,7 @@ A Visual Novel made with Ren'Py about a junior game programmer working in AAA co
 
 * Ren'Py 8.0.3
 * Sublime Text
+* [Game Title Generator](https://letsmakeagame.net/game-title-generator/)
 
 ## Assets copyright
 

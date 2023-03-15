@@ -33,7 +33,7 @@ label .colleagues_arrive:
     artist "It was fine, but the leg machine was broken. AGAIN."
     programmer "Like our codebase."
     artist "And you? How was improv?"
-    programmer "Great! The new guy had some hilarious rejoinders!"
+    programmer "Great! The new guy had some hilarious lines!"
 
     # Alternative dialogue
     # programmer "So, how was the gym?"
