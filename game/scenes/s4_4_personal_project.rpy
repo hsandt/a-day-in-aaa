@@ -10,8 +10,15 @@ label .intro:
     jump .work
 
 label .work:
-    "(After an ellipsis for traveling back to the apartment, MC goes to his desk and work on his personal project)"
-    "(A little tired (depends on office decisions), would like to avoid more screen, but more satisfying than day job)"
+    "After finishing work, I take the tram back home."
+    "I have a drink and sit at my desktop. I boot my laptop and start working on my personal game projects."
+    "Although a little tired, the thought of working with my favorite tech makes me enthusiastic."
+    "A lightweight game engine with short compile times that allows fast iterations..."
+    "No arbitrary crashes just because I got the latest updates at the wrong time..."
+    "I keep working on my old school game until the realities of development bring me back to reason."
+    "When spawning an enemy, it flashes at the wrong position for one frame (the shortest visible unit of time)."
+    "I search on forums and Q&A hubs to find the cause..."
+    "'Ah, I needed to set the transform position, not the rigidbody position! Of course!'"
     "(Play some music and get in the mood)"
     "(MC is working a retro-style game, the opposite of what he does during the day)"
     jump .eating
