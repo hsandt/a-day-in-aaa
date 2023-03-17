@@ -27,33 +27,41 @@ label .work:
     jump .eating
 
 label .eating:
-    "(MC must eat around 8pm)"
-    "(MC watches some series while eating. It feels odd that he's keeping his high school habits, but after hours of work it doesn't feel bad. Plus he doesn't have much time watching them at other times of the day.)"
-    "(MC ponders over the story and characters and would like them to affect his life more so he can improve)"
+    "At 8pm, I realize I should have dinner. Drat! No leftovers in the fridge. I need to cook something to eat."
+    "Too tired for a proper recipe, I decide to go with my legendary seasoned steamed vegetables."
+    "I let the cooking machine do its job so I can gain a few more minutes of work."
+    "When the meal is ready, I grab it and start an anime. Old high school habit."
+    "The characters talk about how people's sense of justice fades out over time and how they become grayer and grayer when they become adult."
+    "I don't feel like I'm selling my soul to my company, but maybe I could do more than what I'm told to?"
+    "But I'm already sending feedback on stuff like accessibility. To go further I'd need more authority, which I don't have."
     jump .choice
 
 label .choice:
-    "(After dinner, MC must decide whether to keep working and risking sleeping late, or just playing)"
+    "It's 9pm after dinner. Should I work a little more and risk oversleeping tomorrow, or just stop and relax?"
     menu:
         "Work more":
             jump .more_work
-        "Play":
-            jump .play
+        "Relax":
+            jump .relax
 
 label .more_work:
-    "(MC gets into his project too much but must fix a last bug. He works between 20:00-0:00 or 21:00-1:00, and ends sleeping late. Decisions at the office affect final time)"
-    "(MC wonders if this extra work is really worth it, as the game doesn't seem promising enough to sell and will probably end up like another training project)"
-    "(It would be cool to hire some people, but there is a vicious circle between having a good demo to attract people and having an artist, etc. to make a cool demo)"
+    "Okay, I just got one last bug to this for tonight."
+    "..."
+    "After fixing three bugs and adding one feature, I realize we're close to midnight."
+    "Was all this extra work necessary though? My game doesn't seem promising enough to sell and will probably end up like another training project or experiment."
+    "It would be cool to hire some people, but there is a vicious circle there: I need a good demo to attract other developers, and I need an artist and a level designer to make a cool demo."
+    "It sure is nice working in a studio..."
+    "Finally done with my work, I shut down my laptop and go to sleep."
     jump .sleep
 
-label .play:
-    "(MC plays, he feels like he's not doing anything but can relax at the same time. He plays 1h.)"
-    "(If the scene started at 20:00, it is now 21:00 and the MC thinks he can still work, he has no reason to sleep now.)"
-    "(So he works on his personal project but gets into it, which leads back to 1.!)"
+label .relax:
+    "I grab some comics and read for a while. The characters talk about... something that doesn't remind me of work. It's just fun."
+    "After a few chapters, I close the book and go to sleep."
     jump .sleep
 
 label .sleep:
-    "(MC finally goes to sleep)"
+    "After closing my eyes, I keep thinking about my game. Oh, but there's that thing I need to fix for the company's game too."
+    "We'll see tomorrow."
     jump .end
 
 label .end:
