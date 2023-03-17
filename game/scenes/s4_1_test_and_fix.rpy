@@ -28,7 +28,7 @@ label .lead_designer_comes_back:
     gd "Let me guess... the producer rejected it with no good reason?"
     associate_lead_gd "Not exactly... He just redrew the curve a little to make sure players spend a little more time playing before they get better gear."
     associate_lead_gd "Four hours here... Five hours there..."
-    gd "That's ridiculous. We talked about one hour last time. Typical of mindless RPG-ization."
+    gd "That's ridiculous. We talked about one hour per level last time. Typical of mindless RPG-ization."
     gd "The point of progression design is to increase the game's lifespan, but it doesn't help if the player gets bored and drops before the end."
 
     "So, usually, the producer's job is to make sure the team can properly work on the product and release it in time."

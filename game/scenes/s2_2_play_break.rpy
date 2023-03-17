@@ -34,6 +34,7 @@ label .colleagues_arrive:
     programmer "Like our codebase."
     artist "And you? How was improv?"
     programmer "Great! The new guy had some hilarious lines!"
+    programmer "... like our codebase."
 
     # Alternative dialogue
     # programmer "So, how was the gym?"
