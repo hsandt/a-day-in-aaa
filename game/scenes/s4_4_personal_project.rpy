@@ -11,16 +11,19 @@ label .intro:
 
 label .work:
     "After finishing work, I take the tram back home."
-    "I have a drink and sit at my desktop. I boot my laptop and start working on my personal game projects."
+    "Back in my apartment, I have a drink and sit at my desktop. I boot my laptop and start working on my personal game projects."
     "Although a little tired, the thought of working with my favorite tech makes me enthusiastic."
     "A lightweight game engine with short compile times that allows fast iterations..."
     "No arbitrary crashes just because I got the latest updates at the wrong time..."
-    "I keep working on my old school game until the realities of development bring me back to reason."
-    "When spawning an enemy, it flashes at the wrong position for one frame (the shortest visible unit of time)."
-    "I search on forums and Q&A hubs to find the cause..."
-    "'Ah, I needed to set the transform position, not the rigidbody position! Of course!'"
-    "(Play some music and get in the mood)"
-    "(MC is working a retro-style game, the opposite of what he does during the day)"
+    "I play some music to get in the mood and start working on my old school platformer..."
+    "... until the realities of development bring me back to reason."
+    "There is a bug in the game: when spawning an enemy, it flashes at the wrong position for one frame (the shortest visible unit of time)."
+    "Fortunately, the Internet reveals that somebody else suffered the same before me and found a solution:"
+    "\"Ah, I needed to set the transform position, not the rigidbody position! Of course!\""
+    "A little later, as I'm editing the level, the editor suddenly crashes."
+    "I decide to write a bug report, but to do that, I need to find the exact sequence of actions that lead to the crash."
+    "Gathering my courage, I spend half an hour to find what causes it (dragging a game object above the root of the scene hierarchy), and another half writing the bug report."
+    "One hour \"lost\" for something I'm not even responsible for? Indie or AAA, development is still development after all."
     jump .eating
 
 label .eating:
