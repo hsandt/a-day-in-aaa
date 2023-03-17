@@ -6,6 +6,7 @@ label .intro:
     scene bg apartment desktop
     # uncomment when music is ready
     # play music apartment.music
+    stop music
 
     jump .work
 
