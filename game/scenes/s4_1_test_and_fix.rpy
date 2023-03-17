@@ -49,19 +49,18 @@ label .lead_designer_comes_back:
     "Or rather, they act like a shield, doing all the negotiations to find the best middle ground for their team."
     "In other words, they do more compromises, and allow their team to keep their integrity. And also swear when they want."
     "I suppose the job is less stressful in studios with better executives."
-    "On my side, I prefer keeping a low profile and just get the job done. But if I was a designer, I'm not sure I'd be able to keep cool like that."
     jump .satisfaction
 
 label .satisfaction:
-    "(But if feels good studying and learning new things as in the University)"
-    "(Thinking back at University, MC remembers he learned to a lot to avoid the past mistakes of other companies making games that turned bad when he was a child)"
-    "(MC felt weak at the time and swore he'd become strong enough to change this. But now, he's still a mere employee and nothing really changed)"
-    "(MC knows that he's just a junior, but he doesn't want to feel like one, esp. after working on student games handling most of the programming before.)"
-    "(MC is not satisfied with his position at all, he is simply satisfying himself into that position to make life easier)"
+    "On my side, I prefer keeping a low profile and just get the job done."
+    "... Before I joined the game industry, I complained a lot about how developers handled their projects, but I could do nothing as a player to change it."
+    "I wanted to become a game developer to change that from the inside. But as I feared, in a big company like this, I just feel like a pawn again."
+    "All I can do is make sure at least my code is not too bad."
     jump .work_end
 
 label .work_end:
-    "(MC finally finishes testing)"
+    "I keep working on my task until I'm satisfied with the result."
     "(If you chose the quick solution in Scene I.6, the task ends here and MC asks a colleague for review)"
     "(Otherwise, the task is not over yet, and MC will have to finish later)"
+    "Time for code review! (TODO)"
     jump s4_4
