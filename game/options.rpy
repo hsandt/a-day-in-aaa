@@ -183,6 +183,16 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
+    ## Sublime Text
+    build.classify('*.sublime-project', None)
+    build.classify('*.sublime-workspace', None)
+
+    # Ren'Py log files.
+    build.classify('log.txt', None)
+    build.classify('errors.txt', None)
+    build.classify('traceback.txt', None)
+    build.classify('lint.txt', None)
+
     ## To archive files, classify them as 'archive'.
 
     # build.classify('game/**.png', 'archive')
@@ -210,4 +220,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "komehara/a-day-in-aaa"
