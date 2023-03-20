@@ -15,6 +15,9 @@ define associate_lead_artist = Character("Associate Lead artist", color="#247173
 define associate_lead_gd = Character("Associate Lead game designer", color="#712473")
 define associate_lead_ui_designer = Character("Associate Lead UI designer", color="#9c23a6")
 
+# Story event flags
+default extensible_architecture = False
+
 label start:
     jump s1_6
     return

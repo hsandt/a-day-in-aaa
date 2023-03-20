@@ -8,36 +8,53 @@ label .intro:
 
     # where I am, who I am, when I am, what I'm supposed to do
     "The weekly meeting was pretty efficient this morning. We summed up project status on the game, I got assigned a new programming task and we ate a dozen chocolates."
-    "The project is an open-world third-person action-adventure game, so expect the player character to have a variety of moves at his disposal. My task is to implement a combo detection system."
-    "No, not a combo system that allows the player character to chain cool moves together. Just a system that detects when the player chained certain actions within a certain time frame."
-    "The former would be cooler, but I guess the leads are not ready to give me such responsibility."
-
-    "Anyway, let's have a look at the {i}feature specs{/i}. "
+    "We are working on an open-world third-person action-adventure game, and I'm part of team that handles character control and actions."
+    "My new task is to make the character grunt and play a specific animation when they get badly hurt (I'll call it 'grunt feature' for short)."
+    "Development is already pretty advanced and the character already has all their basic moves done."
+    "So it's very common at this stage to just add minor aesthetic features like these, especially for a junior programmer."
+    "They all contribute to polishing the game and making it look cool though, so I don't complain."
     jump .feature_specs
 
 label .feature_specs:
-    # feature specs explanation
-    "Feature specs are basically requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
-    "But let's be honest, {i}requirement{/i} is the hard word used in environments a bit more strict than the game industry. In reality, we have a list of things the game designers want to see work in the game, and that we should start with."
-    "From then on, there is a lot of flexibility on how the game should behave exactly. We often take care of edge cases directly in the code, sometimes asking the designers for a few more details."
+    "Before diving into the code, I should ask the game designer for more details on the grunt feature."
+    "I open Skype and send him a message, asking about the wanted behavior of the character, such as exact trigger conditions for the grunt."
+    "While waiting for his answer, I open Visual Studio (it's a bulky app to write code). While Visual Studio opens, I start a YouTube video on –"
 
+    gd "Hey! I saw your message."
+    "I turn back and see the game designer right behind me. Oh, right, I always forget he's setting two desks behind."
+    gd "The dude should grunt when he's hit by damage above a certain threshold, or special damage like fire. I've sent you the design doc for the feature specs."
+    mc "Okay, thanks!"
+
+    # feature specs explanation
+    "The designer goes back to his desk as I notice a new email linking to the 'feature specs'."
+    "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
+    "To be honest, while other development environments may have proper requirements, things are more flexible in video games."
+    "It's common that programmers tweak things a bit to make the feature easier to code or extend, as long as designers are okay."
+    "There are also many 'edge cases' not described in the feature specs, so both programmers and designers will have to improvize when they encounter them."
     jump .architecture
 
 label .architecture:
-    "He ponders over which architecture is best, describing advantages and disadvantages, while writing the same on paper in the office"
-    "He tends to underestimate the actual time the generic solution will take"
-    "The quick and dirty solution:
-    {p}- will work fine for this use case
-    {p}- ...as long as nobody tries to extend the feature, including the MC
-    {p}- only a few functions to implement"
-    "- will be finished in the day, can even be code reviewed
-    {p}- ...but the MC will feel ashamed it that gets through and gets forgotten"
-    "The generic solution:
-    {p}- will work for many use cases
-    {p}- ...but may feel over-engineered
-    {p}- Add a full class."
-    "- It will guarantee future extensibility
-    {p}- ...but will ask me more time. Probably 3 days. But the MC thinks only 1.5."
+    "But let's keep the details for later. For now, I'll try to code something simple that does the job in most cases."
+    "I grab my notebook (graciously offered by the company), and start sketching some possible ways to implement the feature. As usual, each method has advantages and disadvantages..."
+    # Below, MC underestimates the actual time the generic solution will take. In reality, it will take 2x more time than expected.
+    "a. Be specific: check for high and special damage directly in code, then play the grunt and 'badly hurt' animation."
+    "It should be faster to code, probably finished by the end of the day, but less extensible."
+    "b. Be generic: check for any damage received, then play an arbitrary voice and animation accordingly."
+    "It should take longer to code, maybe 2 days, but extensible: designers will be able to edit the type of damage, voice and animation to add similar character reactions later."
+    "I'm tempted to go with a. first, so I can finish my task today, and then maybe extend with b. later when we need a new animation."
+    "But I fear that we'll never have the courage to switch to the more generic solution and keep adding more and more specific code, as usual."
+    "What way do I go?"
+
+    menu:
+        "Be specific and code fast to make it work":
+            $ store.extensible_architecture = False
+            "Let's make it quick!"
+        "Be generic and take time to make an extensible system":
+            $ store.extensible_architecture = True
+            "Let's write something clean and usable in the future!"
+
+    "I dive into the project to find the correct places to plug the new functionality, and start adding new code."
+
     jump s2_1
 
 label .end:
