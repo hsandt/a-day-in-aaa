@@ -160,6 +160,7 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+    adjust_spacing False
 
 ## Input screen ################################################################
 ##
@@ -177,7 +178,7 @@ screen input(prompt):
     window:
 
         vbox:
-            xalign gui.dialogue_text_xalign
+            xanchor gui.dialogue_text_xalign
             xpos gui.dialogue_xpos
             xsize gui.dialogue_width
             ypos gui.dialogue_ypos
@@ -212,18 +213,13 @@ screen choice(items):
             textbutton i.caption action i.action
 
 
-## When this is true, menu captions will be spoken by the narrator. When false,
-## menu captions will be displayed as empty buttons.
-define config.narrator_menu = True
-
-
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
+    ypos 540
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -323,12 +319,15 @@ screen navigation():
 
         textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc"):
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
 
-            ## The quit button is banned on iOS and unnecessary on Android.
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
@@ -354,13 +353,11 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    style_prefix "main_menu"
-
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
     frame:
-        pass
+        style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
@@ -369,6 +366,8 @@ screen main_menu():
     if gui.show_name:
 
         vbox:
+            style "main_menu_vbox"
+
             text "[config.name!t]":
                 style "main_menu_title"
 
@@ -383,17 +382,17 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
+    xsize 560
     yfill True
 
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -30
-    xmaximum 1200
+    xoffset -40
+    xmaximum 1600
     yalign 1.0
-    yoffset -30
+    yoffset -40
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
@@ -495,32 +494,32 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
+    bottom_padding 60
+    top_padding 240
 
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 560
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
+    left_margin 80
+    right_margin 40
+    top_margin 20
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 1840
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
 
 style game_menu_side:
-    spacing 15
+    spacing 20
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 100
+    ysize 240
 
 style game_menu_label_text:
     size gui.title_text_size
@@ -530,7 +529,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    yoffset -60
 
 
 ## About screen ################################################################
@@ -561,10 +560,6 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-
-## This is redefined in options.rpy to add text to the about screen.
-define gui.about = ""
 
 
 style about_label is gui_label
@@ -685,8 +680,8 @@ style slot_time_text is slot_button_text
 style slot_name_text is slot_button_text
 
 style page_label:
-    xpadding 75
-    ypadding 5
+    xpadding 100
+    ypadding 6
 
 style page_label_text:
     text_align 0.5
@@ -724,20 +719,13 @@ screen preferences():
             hbox:
                 box_wrap True
 
-                if renpy.variant("pc"):
+                if renpy.variant("pc") or renpy.variant("web"):
 
                     vbox:
                         style_prefix "radio"
                         label _("Display")
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                vbox:
-                    style_prefix "radio"
-                    label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
@@ -829,20 +817,20 @@ style mute_all_button_text is check_button_text
 
 style pref_label:
     top_margin gui.pref_spacing
-    bottom_margin 3
+    bottom_margin 4
 
 style pref_label_text:
     yalign 1.0
 
 style pref_vbox:
-    xsize 338
+    xsize 450
 
 style radio_vbox:
     spacing gui.pref_button_spacing
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground "gui/button/radio_[prefix_]foreground.png"
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
@@ -858,18 +846,18 @@ style check_button_text:
     properties gui.button_text_properties("check_button")
 
 style slider_slider:
-    xsize 525
+    xsize 700
 
 style slider_button:
     properties gui.button_properties("slider_button")
     yalign 0.5
-    left_margin 15
+    left_margin 20
 
 style slider_button_text:
     properties gui.button_text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize 900
 
 
 ## History screen ##############################################################
@@ -920,15 +908,13 @@ screen history():
 
 ## This determines what tags are allowed to be displayed on the history screen.
 
-define gui.history_allow_tags = set()
+define gui.history_allow_tags = { "alt", "noalt", "rt", "rb", "art" }
 
 
 style history_window is empty
 
 style history_name is gui_label
 style history_name_text is gui_label_text
-style history_text is gui_text
-
 style history_text is gui_text
 
 style history_label is gui_label
@@ -981,7 +967,7 @@ screen help():
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 30
 
             hbox:
 
@@ -1045,6 +1031,10 @@ screen keyboard_help():
         label "V"
         text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
+    hbox:
+        label "Shift+A"
+        text _("Opens the accessibility menu.")
+
 
 screen mouse_help():
 
@@ -1107,14 +1097,14 @@ style help_text is gui_text
 
 style help_button:
     properties gui.button_properties("help_button")
-    xmargin 12
+    xmargin 16
 
 style help_button_text:
     properties gui.button_text_properties("help_button")
 
 style help_label:
-    xsize 375
-    right_padding 30
+    xsize 500
+    right_padding 40
 
 style help_label_text:
     size gui.text_size
@@ -1151,7 +1141,7 @@ screen confirm(message, yes_action, no_action):
         vbox:
             xalign .5
             yalign .5
-            spacing 45
+            spacing 60
 
             label _(message):
                 style "confirm_prompt"
@@ -1159,7 +1149,7 @@ screen confirm(message, yes_action, no_action):
 
             hbox:
                 xalign 0.5
-                spacing 150
+                spacing 200
 
                 textbutton _("Yes") action yes_action
                 textbutton _("No") action no_action
@@ -1206,7 +1196,7 @@ screen skip_indicator():
     frame:
 
         hbox:
-            spacing 9
+            spacing 12
 
             text _("Skipping")
 
@@ -1315,7 +1305,7 @@ screen nvl(dialogue, items=None):
             use nvl_dialogue(dialogue)
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
-        ## config.narrator_menu is set to True, as it is above.
+        ## config.narrator_menu is set to True.
         for i in items:
 
             textbutton i.caption:
@@ -1411,7 +1401,7 @@ style nvl_button_text:
 
 style pref_vbox:
     variant "medium"
-    xsize 675
+    xsize 900
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
@@ -1440,7 +1430,7 @@ style window:
 
 style radio_button:
     variant "small"
-    foreground "gui/phone/button/check_[prefix_]foreground.png"
+    foreground "gui/phone/button/radio_[prefix_]foreground.png"
 
 style check_button:
     variant "small"
@@ -1460,7 +1450,7 @@ style game_menu_outer_frame:
 
 style game_menu_navigation_frame:
     variant "small"
-    xsize 510
+    xsize 680
 
 style game_menu_content_frame:
     variant "small"
@@ -1468,7 +1458,7 @@ style game_menu_content_frame:
 
 style pref_vbox:
     variant "small"
-    xsize 600
+    xsize 800
 
 style bar:
     variant "small"
@@ -1506,10 +1496,10 @@ style vslider:
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
 
-style slider_pref_vbox:
+style slider_vbox:
     variant "small"
     xsize None
 
-style slider_pref_slider:
+style slider_slider:
     variant "small"
-    xsize 900
+    xsize 1200

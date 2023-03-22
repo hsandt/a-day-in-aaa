@@ -42,8 +42,9 @@ define build.name = "a_day_in_aaa"
 
 ## Sounds and music ############################################################
 
-## These three variables control which mixers are shown to the player by
-## default. Setting one of these to False will hide the appropriate mixer.
+## These three variables control, among other things, which mixers are shown
+## to the player by default. Setting one of these to False will hide the
+## appropriate mixer.
 
 define config.has_sound = True
 define config.has_music = True
@@ -203,11 +204,6 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-
-## Set this to a string containing your Apple Developer ID Application to enable
-## codesigning on the Mac. Be sure to change it to your own Apple-issued ID.
-
-# define build.mac_identity = "Developer ID Application: Guy Shy (XHTE5H7Z42)"
 
 
 ## A Google Play license key is required to download expansion files and perform
