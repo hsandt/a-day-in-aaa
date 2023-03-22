@@ -3,15 +3,16 @@ label s4_4:
     jump .intro
 
 label .intro:
-    scene bg apartment desktop
+    scene bg tram
     # uncomment when music is ready
     # play music apartment.music
     stop music
 
+    "After finishing work, I take the tram back home."
     jump .work
 
 label .work:
-    "After finishing work, I take the tram back home."
+    scene bg apartment desktop
     "Back in my apartment, I have a drink and sit at my desktop. I boot my laptop and start working on my personal game projects."
     "Although a little tired, the thought of working with my favorite tech makes me enthusiastic."
     "A lightweight game engine with short compile times that allows fast iterations..."
