@@ -13,9 +13,18 @@ A Visual Novel made with Ren'Py about a junior game programmer working in AAA co
 * Sublime Text
 * [Game Title Generator](https://letsmakeagame.net/game-title-generator/)
 
-## Assets copyright
+## Assets license
 
-Currently most assets are placeholders adapted from free assets downloaded on the Internet:
+### Own assets
+
+The following assets are under copyright 2018-2023 Long Nguyen Huu:
+
+* custom GUI textures
+* backgrounds I have drawn: open space desktop, tram, apartment desktop
+
+### Third-party assets
+
+The following are placeholders adapted from free assets downloaded on the Internet:
 
 * `331656__trollarch2__keyboard-typing.mp3` is used for keyboard typing SFX, and has been directly downloaded from [Keyboard Typing](https://freesound.org/people/Trollarch2/sounds/331656/) by [Trollarch2](https://freesound.org/people/Trollarch2/), CC0
 
@@ -24,3 +33,7 @@ Currently most assets are placeholders adapted from free assets downloaded on th
 * `eating_space.png` - Eating space background based on [Photo](https://unsplash.com/photos/6bKpHAun4d8) by [Toa Heftiba](https://unsplash.com/search/photos/cafe) on Unsplash
 
 * `eating_space.mp3` - Eating space BGM based on [small cafe ambience.wav](https://freesound.org/people/Tomlija/sounds/99632/) by [Tomlija](https://freesound.org/people/Tomlija/) on freesound under CC BY 3.0. Modifications: mono, converted to mid-quality mp3
+
+## Code license
+
+See [LICENSE](LICENSE).
