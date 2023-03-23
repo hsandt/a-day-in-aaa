@@ -1,9 +1,9 @@
 # Images
 
-## Backgrounds (1080p)
+## Backgrounds (2560x1440)
 
 image bg open_space desktop = "images/bg/open_space_desktop.jpg"
-image bg eating_space = im.Scale("images/bg/eating_space.png", 2560, 1440)  # fix until we get final picture in 1440p
+image bg eating_space = "images/bg/eating_space.jpg"
 image bg tram = "images/bg/tram.jpg"
 image bg apartment desktop = im.Scale("images/bg/apartment_desktop.jpg", 2560, 1440)
 
