@@ -4,7 +4,7 @@ label s2_2:
 
 label .intro:
     # TODO: replace with open space overview
-    scene bg open_space desktop
+    scene bg office desktop
     play music open_space.quiet
 
     jump .watch_play

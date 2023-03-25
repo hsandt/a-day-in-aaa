@@ -13,7 +13,7 @@ label .intro:
     jump .fast_food
 
 label .fast_food:
-    scene bg eating_space
+    scene bg office eating_area
     play music eating_space.quiet
     "(INSERT SHOP CHOICE HERE - for now, auto-choose fast food)"
     "I go to the usual fast food shop in front of the company building. Not great for my diet, but... I don't have a diet."

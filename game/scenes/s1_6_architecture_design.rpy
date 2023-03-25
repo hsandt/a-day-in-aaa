@@ -3,7 +3,7 @@ label s1_6:
     jump .intro
 
 label .intro:
-    scene bg open_space desktop
+    scene bg office desktop
     play music open_space.quiet
 
     # where I am, who I am, when I am, what I'm supposed to do

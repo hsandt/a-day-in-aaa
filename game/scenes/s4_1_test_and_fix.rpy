@@ -3,7 +3,7 @@ label s4_1:
     jump .intro
 
 label .intro:
-    scene bg open_space desktop
+    scene bg office desktop
     play music open_space.quiet
 
     jump .testing
