@@ -2,6 +2,7 @@
 
 ## Backgrounds (2560x1440)
 
+image bg office open_plan = "images/bg/office_open_plan.jpg"
 image bg office desktop = "images/bg/office_desktop.jpg"
 image bg office eating_area = "images/bg/office_eating_area.jpg"
 image bg tram = "images/bg/tram.jpg"

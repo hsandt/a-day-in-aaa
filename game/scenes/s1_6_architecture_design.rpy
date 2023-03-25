@@ -3,7 +3,7 @@ label s1_6:
     jump .intro
 
 label .intro:
-    scene bg office desktop
+    scene bg office open_plan
     play music open_space.quiet
 
     # where I am, who I am, when I am, what I'm supposed to do
@@ -16,6 +16,8 @@ label .intro:
     jump .feature_specs
 
 label .feature_specs:
+    scene bg office desktop
+    "I sit back at my computer."
     "Before diving into the code, I should ask the game designer for more details on the grunt feature."
     "I open Skype and send him a message, asking about the wanted behavior of the character, such as exact trigger conditions for the grunt."
     "While waiting for his answer, I open Visual Studio (it's a bulky app to write code). While Visual Studio opens, I start a YouTube video on –"

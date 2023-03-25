@@ -3,8 +3,7 @@ label s2_2:
     jump .intro
 
 label .intro:
-    # TODO: replace with open space overview
-    scene bg office desktop
+    scene bg office open_plan
     play music open_space.quiet
 
     jump .watch_play
@@ -16,6 +15,7 @@ label .watch_play:
     jump .play_game
 
 label .play_game:
+    scene bg office desktop
     "(INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II)"
     "Let's go with Starcraft II today."
     "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."
