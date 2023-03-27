@@ -1,5 +1,6 @@
 ﻿# Declare characters used by this game. The color argument colorizes the
 # name of the character.
+define narrator = Character(None, window_background=Image("gui/textbox_narration.png", xalign=0.5, yalign=1.0))
 define mc = Character("Me", color="#247336")
 define neighbor_gd = Character("Neighbor game designer", color="#712473")
 define junior_programmer = Character("Junior programmer", color="#735724")

@@ -138,6 +138,9 @@ style window:
 
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
+style say_dialogue:
+    line_spacing 8
+
 style namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
