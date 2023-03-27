@@ -204,13 +204,13 @@ define gui.quick_button_text_selected_color = gui.accent_color
 
 define gui.choice_button_width = 1580
 define gui.choice_button_height = None
-define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(200, 10, 200, 10)
+define gui.choice_button_tile = True
+define gui.choice_button_borders = Borders(82, 50, 92, 60)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = "#555555"
-define gui.choice_button_text_hover_color = "#ffffff"
+define gui.choice_button_text_hover_color = "#555555"
 define gui.choice_button_text_insensitive_color = "#444444"
 
 
@@ -223,7 +223,7 @@ define gui.choice_button_text_insensitive_color = "#444444"
 ## The save slot button.
 define gui.slot_button_width = 552
 define gui.slot_button_height = 412
-define gui.slot_button_borders = Borders(20, 20, 20, 20)
+define gui.slot_button_borders = Borders(82, 20, 92, 20)
 define gui.slot_button_text_size = 28
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
