@@ -6,6 +6,7 @@ label .intro:
     jump .testing
 
 label .testing:
+    play sound audio.sfx.keyboard_typing_strong
     "I spend a few hours coding the new feature, using the architecture I considered this morning."
     "I spot a few bugs in my first implementation, so I go through a few more iterations to improve the code."
     "My biggest issue, as usual, is that it takes a lot of time to recompile the code after each change to test it."

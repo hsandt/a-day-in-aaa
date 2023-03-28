@@ -19,6 +19,7 @@ label .play_game:
     $ audio_crossFade(2.0, "music/office_desktop.ogg")
     "(INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II)"
     "Let's go with Starcraft II today."
+    play sound audio.sfx.keyboard_typing_weak
     "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."
     "But what do you want? I hadn't played Starcraft since Brood War in the 2000s, so my RTS-fu is a little rusty."
     "I feel like I improved since last time though, so I try a versus AI at Hard difficulty – how can I hope playing online if I can't even beat the AI?"
@@ -58,5 +59,6 @@ label .break_end:
     "I quickly glance at the room to check that nobody cares about me."
     "They don't, yet as time goes on, I feel an invisible pressure growing on my back."
     "Eventually, I manage to grab my victory (nothing to be proud of, I set the AI to Medium this time) –"
+    play sound audio.sfx.keyboard_typing_weak
     "– and at the same time my peace of mind, as I close my game and open Visual Studio."
     jump s4_1

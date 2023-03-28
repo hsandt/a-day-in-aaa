@@ -20,6 +20,7 @@ label .feature_specs:
     $ audio_crossFade(2.0, "music/office_desktop.ogg")
     "I sit back at my computer."
     "Before diving into the code, I should ask the game designer for more details on the grunt feature."
+    play sound audio.sfx.keyboard_typing_strong
     "I open Skype and send him a message, asking about the wanted behavior of the character, such as exact trigger conditions for the grunt."
     "While waiting for his answer, I open Visual Studio (it's a bulky app to write code). While Visual Studio opens, I start a YouTube video on –"
 
@@ -56,6 +57,7 @@ label .architecture:
             $ store.extensible_architecture = True
             "Let's write something clean and usable in the future!"
 
+    play sound audio.sfx.keyboard_typing_strong
     "I dive into the project to find the correct places to plug the new functionality, and start adding new code."
 
     jump s2_1
