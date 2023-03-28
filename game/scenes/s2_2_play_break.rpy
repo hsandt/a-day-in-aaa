@@ -4,7 +4,7 @@ label s2_2:
 
 label .intro:
     scene bg office open_plan
-    play music open_space.quiet
+    $ audio_crossFade(2.0, "music/office_open_plan.ogg")
 
     jump .watch_play
 
@@ -16,6 +16,7 @@ label .watch_play:
 
 label .play_game:
     scene bg office desktop
+    $ audio_crossFade(2.0, "music/office_desktop.ogg")
     "(INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II)"
     "Let's go with Starcraft II today."
     "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."

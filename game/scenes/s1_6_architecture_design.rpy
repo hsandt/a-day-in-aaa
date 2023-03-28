@@ -4,7 +4,7 @@ label s1_6:
 
 label .intro:
     scene bg office open_plan
-    play music open_space.quiet
+    play music office_open_plan
 
     # where I am, who I am, when I am, what I'm supposed to do
     "The weekly meeting was pretty efficient this morning. We summed up project status on the game, I got assigned a new programming task and we ate a dozen chocolates."
@@ -17,6 +17,7 @@ label .intro:
 
 label .feature_specs:
     scene bg office desktop
+    $ audio_crossFade(2.0, "music/office_desktop.ogg")
     "I sit back at my computer."
     "Before diving into the code, I should ask the game designer for more details on the grunt feature."
     "I open Skype and send him a message, asking about the wanted behavior of the character, such as exact trigger conditions for the grunt."

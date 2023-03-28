@@ -6,7 +6,7 @@ label .intro:
     scene bg tram
     # uncomment when music is ready
     # play music apartment.music
-    stop music
+    $ audio_stopFade(2.0)
 
     "After finishing work, I take the tram back home."
     jump .work

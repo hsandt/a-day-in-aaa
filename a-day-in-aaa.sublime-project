@@ -17,11 +17,13 @@
 			],
 			"variants": [
 				{
-					"name": "Windows",
+					"name": "Warp: s2_1_lunch",
 					"cmd":
 					[
-						"C:\\Users\\acro_\\Home\\Portable Applications\\renpy-7.2.2-sdk\\renpy.exe",
-						"${project_path}"
+						"renpy.sh",
+						"${project_path}",
+						"--warp",
+						"scenes/s2_1_lunch.rpy:2"
 					]
 				}
 			]

@@ -12,5 +12,6 @@ image bg apartment desktop = im.Scale("images/bg/apartment_desktop.jpg", 2560, 1
 
 ## BGM
 
-define audio.open_space.quiet = "music/open_space.mp3"
+define audio.office_open_plan = "music/office_open_plan.ogg"
+define audio.office_desktop = "music/office_desktop.ogg"
 define audio.office_eating_area = "music/office_eating_area.ogg"
