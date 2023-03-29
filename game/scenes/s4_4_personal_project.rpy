@@ -6,7 +6,7 @@ label .intro:
     scene bg tram
     # uncomment when music is ready
     # play music apartment.music
-    stop music
+    $ audio_stopFade(2.0)
 
     "After finishing work, I take the tram back home."
     jump .work
@@ -14,6 +14,7 @@ label .intro:
 label .work:
     scene bg apartment desktop
     "Back in my apartment, I have a drink and sit at my desktop. I boot my laptop and start working on my personal game projects."
+    play sound audio.sfx.keyboard_typing_weak
     "Although a little tired, the thought of working with my favorite tech makes me enthusiastic."
     "A lightweight game engine with short compile times that allows fast iterations..."
     "No arbitrary crashes just because I got the latest updates at the wrong time..."
@@ -23,6 +24,7 @@ label .work:
     "Fortunately, the Internet reveals that somebody else suffered the same before me and found a solution:"
     "\"Ah, I needed to set the transform position, not the rigidbody position! Of course!\""
     "A little later, as I'm editing the level, the editor suddenly crashes."
+    play sound audio.sfx.keyboard_typing_weak
     "I decide to write a bug report, but to do that, I need to find the exact sequence of actions that lead to the crash."
     "Gathering my courage, I spend half an hour to find what causes it (dragging a game object above the root of the scene hierarchy), and another half writing the bug report."
     "One hour \"lost\" for something I'm not even responsible for? Indie or AAA, development is still development after all."
@@ -48,6 +50,7 @@ label .choice:
 
 label .more_work:
     "Okay, I just got one last bug to this for tonight."
+    play sound audio.sfx.keyboard_typing_weak
     "..."
     "After fixing three bugs and adding one feature, I realize we're close to midnight."
     "Was all this extra work necessary though? My game doesn't seem promising enough to sell and will probably end up like another training project or experiment."

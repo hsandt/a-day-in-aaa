@@ -13,8 +13,8 @@ label .intro:
     jump .fast_food
 
 label .fast_food:
-    scene bg eating_space
-    play music eating_space.quiet
+    scene bg office eating_area
+    $ audio_crossFade(2.0, "music/office_eating_area.ogg")
     "(INSERT SHOP CHOICE HERE - for now, auto-choose fast food)"
     "I go to the usual fast food shop in front of the company building. Not great for my diet, but... I don't have a diet."
     "Since I left a bit late, the queue is pretty long, it even continues outside of the shop. As usual, most of the customers are employees of the same company."

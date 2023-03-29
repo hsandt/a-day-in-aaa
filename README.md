@@ -1,39 +1,34 @@
 # A Day in AAA
 
-A Visual Novel made with Ren'Py about a junior game programmer working in AAA company
+An entry for [NaNoRenO 2023](https://itch.io/jam/nanoreno2023). *A Day in AAA* is a visual novel about a junior game programmer working in AAA company.
+
+See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playtesting) and submission page (INCOMING)
 
 ## Progress
 
 * Project setup
-* A few scene drafts
+* A few scenes (v1)
+* Custom backgrounds
+* Custom ambient sounds and SFX
+* Custom GUI (WIP)
 
 ## Tools
 
 * Ren'Py 8.0.3
 * Sublime Text
+* Audacity
 * [Game Title Generator](https://letsmakeagame.net/game-title-generator/)
+
+## Credits
+
+- Writing, Scripting, Background art: komehara
+- Ambient sound, SFX: recording and mixing by komehara, with thanks to office employees
+- [Cross-fade function](https://moley-face.tumblr.com/post/88819624433/i-just-figured-id-post-some-code-i-implemented) in [02_custom_audio.rpy](game/02_custom_audio.rpy) by [Mole](https://mole.works/)
 
 ## Assets license
 
-### Own assets
-
-The following assets are under copyright 2018-2023 Long Nguyen Huu:
-
-* custom GUI textures
-* backgrounds I have drawn: open space desktop, tram, apartment desktop
-
-### Third-party assets
-
-The following are placeholders adapted from free assets downloaded on the Internet:
-
-* `331656__trollarch2__keyboard-typing.mp3` is used for keyboard typing SFX, and has been directly downloaded from [Keyboard Typing](https://freesound.org/people/Trollarch2/sounds/331656/) by [Trollarch2](https://freesound.org/people/Trollarch2/), CC0
-
-* `open_space.mp3` is used as Open space BGM, and is based on [The Office](https://freesound.org/people/qubodup/sounds/211945/) by [qubodup](https://freesound.org/people/qubodup/), CC BY 3.0. Modifications: cut to loop, mono, reduced quality, exported as mp3
-
-* `eating_space.png` - Eating space background based on [Photo](https://unsplash.com/photos/6bKpHAun4d8) by [Toa Heftiba](https://unsplash.com/search/photos/cafe) on Unsplash
-
-* `eating_space.mp3` - Eating space BGM based on [small cafe ambience.wav](https://freesound.org/people/Tomlija/sounds/99632/) by [Tomlija](https://freesound.org/people/Tomlija/) on freesound under CC BY 3.0. Modifications: mono, converted to mid-quality mp3
+Custom visual and audio assets are under copyright 2018-2023 Long Nguyen Huu
 
 ## Code license
 
-See [LICENSE](LICENSE).
+Custom code (outside third-party code snippets and Ren'Py template) is under [LICENSE](LICENSE).
