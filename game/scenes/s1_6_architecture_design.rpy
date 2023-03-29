@@ -1,10 +1,24 @@
+# "Scene I.6: Architecture design"
 label s1_6:
-    "Scene I.6: Architecture design"
     jump .intro
 
 label .intro:
     scene bg office open_plan
     play music office_open_plan
+
+    # punchy intro
+    "NDA... Non-Disclosure Agreement."
+    "A contract clause whose role is to ensure we don't leak confidential information into the public space."
+    "Information like the game we're working on, the technology we use or what happens inside the company."
+    "I think these obscure glass windows represent it perfectly. Even the window cleaners that sometimes rappels down the building wouldn't see a thing inside the 6th floor of Black Rooster Games."
+
+    pause 0.8
+
+    "Even if they could, they would probably be disappointed.
+    {p}Just a bunch of people sitting at their desks or talking to each other, trying to solve various issues — as in any other office."
+    "The promotional posters and figurines look cool, though."
+
+    pause 0.8
 
     # where I am, who I am, when I am, what I'm supposed to do
     "The weekly meeting was pretty efficient this morning. We summed up project status on the game, I got assigned a new programming task and we ate a dozen chocolates."

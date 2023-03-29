@@ -18,6 +18,7 @@ See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playt
 * Sublime Text
 * Audacity
 * [Game Title Generator](https://letsmakeagame.net/game-title-generator/)
+* [Game studio name generator](https://www.fantasynamegenerators.com/game-studio-names.php)
 
 ## Credits
 
