@@ -23,13 +23,27 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.1"
+define config.version = "1.2"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+This game was developed for {a=https://itch.io/jam/nanoreno2023}NaNoRenO 2023{/a}.
+
+See {a=https://komehara.itch.io/a-day-in-aaa}game page{/a} and submission page (INCOMING)
+
+{b}Credits{/b}
+
+- Writing, Scripting, Background art: komehara
+
+- Ambient sound, SFX: recording and mixing by komehara, with thanks to office employees
+
+- {a=https://moley-face.tumblr.com/post/88819624433/i-just-figured-id-post-some-code-i-implemented}Cross-fade function{/a}
+in 02_custom_audio.rpy by {a=https://mole.works/}Mole{/a}
+
+Source code available on the {a=https://github.com/hsandt/a-day-in-aaa}GitHub repository{/a}
 """)
 
 

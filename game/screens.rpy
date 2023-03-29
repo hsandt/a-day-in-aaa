@@ -18,8 +18,11 @@ style input:
     adjust_spacing False
 
 style hyperlink_text:
-    properties gui.text_properties("hyperlink", accent=True)
+    # Originally uses accent, we prefer setting a custom color so we reserve
+    # accent for titles, etc.
+    properties gui.text_properties("hyperlink")
     hover_underline True
+    color "#2267b9"
 
 style gui_text:
     properties gui.text_properties("interface")

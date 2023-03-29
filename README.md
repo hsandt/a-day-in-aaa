@@ -1,6 +1,8 @@
 # A Day in AAA
 
-A Visual Novel made with Ren'Py about a junior game programmer working in AAA company
+An entry for [NaNoRenO 2023](https://itch.io/jam/nanoreno2023). *A Day in AAA* is a visual novel about a junior game programmer working in AAA company.
+
+See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playtesting) and submission page (INCOMING)
 
 ## Progress
 
@@ -19,7 +21,9 @@ A Visual Novel made with Ren'Py about a junior game programmer working in AAA co
 
 ## Credits
 
-- Cross-fade function in [02_custom_audio.rpy](game/02_custom_audio.rpy) by [Mole](https://moley-face.tumblr.com)
+- Writing, Scripting, Background art: komehara
+- Ambient sound, SFX: recording and mixing by komehara, with thanks to office employees
+- [Cross-fade function](https://moley-face.tumblr.com/post/88819624433/i-just-figured-id-post-some-code-i-implemented) in [02_custom_audio.rpy](game/02_custom_audio.rpy) by [Mole](https://mole.works/)
 
 ## Assets license
 
