@@ -1,6 +1,6 @@
 # A Day in AAA
 
-An entry for [NaNoRenO 2023](https://itch.io/jam/nanoreno2023). *A Day in AAA* is a visual novel about a junior game programmer working in AAA company.
+An entry for [NaNoRenO 2023](https://itch.io/jam/nanoreno2023). *A Day in AAA* is a visual novel about a game programmer working in AAA company.
 
 See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playtesting) and submission page (INCOMING)
 
