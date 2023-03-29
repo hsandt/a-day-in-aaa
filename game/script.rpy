@@ -20,5 +20,10 @@ define associate_lead_ui_designer = Character("Associate Lead UI designer", colo
 default extensible_architecture = False
 
 label start:
+    # Game setup
+
+    # Hide the text box during pause statements, as no text is shown
+    window hide
+
     jump s1_6
     return
