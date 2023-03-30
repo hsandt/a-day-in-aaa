@@ -1,4 +1,4 @@
-# "Scene I.6: Architecture design"
+# Scene I.6: Architecture design
 label s1_6:
     jump .intro
 
@@ -73,6 +73,8 @@ label .feature_specs:
     gd "I've sent you the feature specs for more details."
     mc "Okay, thanks!"
 
+    "I actually enjoy these chatting moments, they make me feel part of the team and responsible for my tasks."
+
     # feature specs explanation
     "As the designer goes back to his desk, I notice a new email linking to the 'feature specs'."
     "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
@@ -105,6 +107,8 @@ label .architecture:
 
     play sound audio.sfx.keyboard_typing_strong
     "I dive into the project's source code to find the correct places to plug the new behavior, and start coding."
+
+    pause 1.5
 
     jump s2_1
 

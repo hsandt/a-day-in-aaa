@@ -1,15 +1,16 @@
+# Scene II.1: Lunch
 label s2_1:
-    "Scene II.1: Lunch"
     jump .intro
 
 label .intro:
-    "At some point, I realize that it's past noon already, and most of the people around me have already left for lunch."
-    "I should probably get going to."
+    "Oh, it's already 12:40? I turn around and see that most of the people around me have already left for lunch."
+    "I should probably get going too."
     "Lunch break has a flexible time of one hour between 12:00 and 14:00, but if you start your break after 13:00, you still have to get back to work at 14:00, so you're basically losing break time."
     "I wish we could carry unused break time over the next day just like holidays over the next year..."
+
     pause 0.5
-    "Oh, looks like I forgot my bento today. Didn't have much left in my fridge yesterday anyway."
-    "I'll just get some food from one of the shops outside."
+
+    "Oh, looks like I forgot my bento today. I'll just get some food from one of the shops outside."
     jump .fast_food
 
 label .fast_food:
