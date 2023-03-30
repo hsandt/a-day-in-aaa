@@ -1,42 +1,42 @@
+# Scene II.2: Play Break
 label s2_2:
-    "Scene II.2: Play Break"
     jump .intro
 
 label .intro:
-    scene bg office open_plan
+    scene bg office open_plan with Dissolve(1.0)
     $ audio_crossFade(2.0, "music/office_open_plan.ogg")
 
     jump .watch_play
 
 label .watch_play:
-    "When I enter the room, I see some of my colleagues playing online together on free-to-play, and others playing solo indie games."
-    "I haven't played online for a while, yet alone the recent titles, so I don't think I'll be able to withstand the competition."
-    "So I'll just pick a solo game today, as usual."
+    "When I enter the room, I see some of my colleagues playing together some free-to-play title, and others focused on solo indie games."
+    "I haven't played online for a while and I don't even know the more recent titles, so I don't think I'll be able to withstand the competition."
+    "I guess I'll just pick a solo game today, as usual."
     jump .play_game
 
 label .play_game:
-    scene bg office desktop
+    scene bg office desktop with dissolve
     $ audio_crossFade(2.0, "music/office_desktop.ogg")
-    "(INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II)"
-    "Let's go with Starcraft II today."
+    # INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II
+    "Let's go with Starcraft II for today. {p}Yeah, it's an online game, but I'm just playing offline for now."
     play sound audio.sfx.keyboard_typing_weak
-    "I launch the game and play a bit of campaign. Yeah, the mode every serious player has already finished years ago."
-    "But what do you want? I hadn't played Starcraft since Brood War in the 2000s, so my RTS-fu is a little rusty."
-    "I feel like I improved since last time though, so I try a versus AI at Hard difficulty – how can I hope playing online if I can't even beat the AI?"
-    "I get crushed."
-    "I turn to my knowledgeable colleague for advice.\n'Disappointing', he says."
-    "'You need to memorize your build order. Your {b}build order{/b}!'"
+    "After all, my only previous experience with Starcraft was Brood War in the 2000s, so my RTS-fu is a little rusty."
+    "But! I beat the AI at Medium level last time... so I try Hard this time!"
+    "I get crushed. {p}I suppose I won't be going online today."
+
+    pause 0.5
+
     jump .colleagues_arrive
 
 label .colleagues_arrive:
     "As the end of lunch break draws nearer, I see more and more colleagues coming back to the room."
 
     programmer "So, how was the gym?"
-    artist "It was fine, but the leg machine was broken. AGAIN."
+    artist "It was fine, but the leg machine was broken. {i}Again{/i}."
     programmer "Like our codebase."
     artist "And you? How was improv?"
     programmer "Great! The new guy had some hilarious lines!"
-    programmer "... like our codebase."
+    programmer ".{w=0.2}.{w=0.2}.{w=0.5} like our codebase."
 
     # Alternative dialogue
     # programmer "So, how was the gym?"
@@ -44,21 +44,49 @@ label .colleagues_arrive:
     # programmer "Great! The new guy had some hilarious rejoinders!"
 
     "I realize how other developers have regularly been practicing healthy or artistic activities. Maybe I should join a club too?"
-    "... or I could keep sitting here and playing every noon, as usual."
+    ".{w=0.4}.{w=0.4}.{w=0.8} or, I could keep sitting here and playing every noon, as usual."
     "Thinking of it, it's great that we are all adults and we can just do what we want on our spare time."
-    "But sometimes I'd need some life coach to get me to do more varied things, as I used to at school."
-    "OK, I got a few minutes left. Ready for another versus?"
+    "But sometimes I'd need some life coach to get me to do more varied things. A bit like school with sports classes and all."
+
+    pause 0.5
+
+    "OK, I got a few minutes left. Ready for another match?"
+
+    pause 1.0
+
     jump .break_end
 
 label .break_end:
-    "Before I notice, break time is over, but I haven't finished my game yet. The opponent is tougher than expected."
-    "(INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing)"
-    "Believing in my incoming victory, I push the game a little further. But it's now quarter past two and I'm still far from it."
+    "Before I notice, break time is over, but I haven't finished my game yet. Hard mode sure is tough."
+    # INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing
+    "Believing in my incoming victory this time, I push the game a little further. But it's now 14:15 and I'm still far from it."
     "Should I just give up?"
-    "The mood slowly changing in the room. People are getting back to work, speaking less and typing more."
-    "I quickly glance at the room to check that nobody cares about me."
-    "They don't, yet as time goes on, I feel an invisible pressure growing on my back."
-    "Eventually, I manage to grab my victory (nothing to be proud of, I set the AI to Medium this time) –"
+    # INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing
+    # TODO: create a variant of office open plan/desktop with louder voices, and play it during the break,
+    # but cross fade to the quieter variant now
+    "The mood is slowly becoming more serious in the room. People are getting back to work, speaking less and typing more."
+    "I quickly glance at the room to check that nobody cares about me and my Terran base."
+    "They don't seem to. Yet, as time goes on, I feel an invisible pressure growing on my back."
+    "The Zergs eventually defeat me. But I feel released, as I can finally close the game and avoid further suspicion."
+
+    pause 0.5
+
     play sound audio.sfx.keyboard_typing_weak
-    "– and at the same time my peace of mind, as I close my game and open Visual Studio."
+    "I reopen Visual Studio, which gives me just enough time to turn to my RTS-enthusiast colleague for some advice."
+
+    mc "I couldn't beat AI in Hard."
+
+    "My colleague sighs, looking terribly disappointed."
+
+    neighbor_gd "I expected more from you. What's your build order?"
+    mc "My build?{w=0.8} Oh, right.{w=0.8} Er...{w=0.8} Barracks...{w=0.8} Supply Depot...{w=0.8} Refinery?"
+    neighbor_gd "You need to know it by heart, or you'll get crushed!"
+    mc "Erm... right."
+
+    pause 0.5
+
+    "Visual Studio has just finished opening, so I use this as an excuse to escape this conversation before this all turns into a scene of SC2VN."
+
+    # TODO: other devs wearing playing hardcore game?
+
     jump s4_1

@@ -11,6 +11,9 @@ label .intro:
     pause 0.5
 
     "Oh, looks like I forgot my bento today. I'll just get some food from one of the shops outside."
+
+    "I put my computer to hibernation and leave the company building."
+
     jump .fast_food
 
 label .fast_food:
@@ -20,7 +23,7 @@ label .fast_food:
     $ audio_stopFade(2.0)
 
     # TODO: INSERT SHOP CHOICE HERE - for now, auto-choose fast food
-    "I go to the usual fast-food takeaway in front of the company building."
+    "I go to the usual fast-food takeaway in the street in front of the building."
     "Since I left a bit late, the queue is pretty long. It even continues outside of the shop. As usual, most of the customers are employees of Black Rooster."
     # TODO: uncomment line below and INSERT NEW DIALOGUE
     # "I recognize a few ones and start talking with them while waiting."
@@ -67,11 +70,11 @@ label .table:
 
     pause 0.5
 
-    "I notice lunch break is almost over, so I greet them and throw what's left of my lunch bag in the bin."
+    "I notice that there are 20 minutes left before the end of the lunch break. I want play a little before going back to work, so I greet them and throw what's left of my lunch bag in the bin."
     "The bins are already full of similar bags. Sure, cardboard and plastic boxes are recyclable, but in such a big company, every action's impact is multiplied by 100."
     "Is everything alright, or is it another ecological disaster?"
 
     pause 0.5
 
-    "Anyway, time to go back to work!"
+    "Anyway, time to play!"
     jump s2_2
