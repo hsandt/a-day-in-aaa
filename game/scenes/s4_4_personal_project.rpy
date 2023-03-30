@@ -28,6 +28,7 @@ label .work:
     "I decide to write a bug report, but to do that, I need to find the exact sequence of actions that lead to the crash."
     "Gathering my courage, I spend half an hour to find what causes it (dragging a game object above the root of the scene hierarchy), and another half writing the bug report."
     "One hour \"lost\" for something I'm not even responsible for? Indie or AAA, development is still development after all."
+    # TODO: NO NDA but don't want to post on SNS
     jump .eating
 
 label .eating:

@@ -14,36 +14,64 @@ label .intro:
     jump .fast_food
 
 label .fast_food:
-    scene bg office eating_area
+    # no dedicated bg for street, so use empty canvas as fallback
+    scene bg empty_canvas with Dissolve(1.0)
+    # no dedicated ambient sound for street, so just fade out as fallback
+    $ audio_stopFade(2.0)
+
+    # TODO: INSERT SHOP CHOICE HERE - for now, auto-choose fast food
+    "I go to the usual fast-food takeaway in front of the company building."
+    "Since I left a bit late, the queue is pretty long. It even continues outside of the shop. As usual, most of the customers are employees of Black Rooster."
+    # TODO: uncomment line below and INSERT NEW DIALOGUE
+    # "I recognize a few ones and start talking with them while waiting."
+    # inside the shop, audio is similar to office eating area so reuse it
     $ audio_crossFade(2.0, "music/office_eating_area.ogg")
-    "(INSERT SHOP CHOICE HERE - for now, auto-choose fast food)"
-    "I go to the usual fast food shop in front of the company building. Not great for my diet, but... I don't have a diet."
-    "Since I left a bit late, the queue is pretty long, it even continues outside of the shop. As usual, most of the customers are employees of the same company."
-    "I recognize a few ones and start talking with them while waiting."
-    "(INSERT DIALOGUE HERE)"
-    "I finally reach the counter and ask for today's soup. The clerk is very enthusiastic. Maybe a bit too much, but at least he's efficient."
+    "I finally enter the shop and reach the counter."
+
+    fast_food_clerk "Hey!! What can I get for you?!"
+    mc "Erm... Today's soup and... two onion rings, please."
+    fast_food_clerk "Do you want any drink?!"
+    mc "Er... No, thank you."
+    fast_food_clerk "Will that be all?!"
+    mc "Yes..."
+    fast_food_clerk "That'll be 4.12 euros."
+
+    pause 0.3
+
     "With my lunch pack in hands, I go back to the office."
     jump .office_lunch
 
 label .office_lunch:
-    "Each floor has its own lunch area. It's not very big, but since employees come at different times, some eat out and others eat at their desk, the space is generally enough."
-    "(INSERT SITTING CHOICE HERE - for now, auto-choose table with juniors)"
-    "I find a table with some other junior employees and join the discussion."
-    jump .table_junior
+    scene bg office eating_area with dissolve
 
-label .table_junior:
+    "Each floor has its own lunch area. It's not very big, but since employees come by wave at different times, the flow of people is spread across the lunch break."
+    "On top of that, some developers eat out in fancier restaurants, while others eat at their desk to {i}maximize efficiency{/i} (or watch fun videos). So the space is generally enough for the remaining people."
+
+    pause 0.3
+
+    # INSERT SITTING CHOICE HERE - for now, auto-choose table with juniors
+    "I find a table with some people I recognize and join the discussion."
+    jump .table
+
+label .table:
     junior_programmer "There is Paris Games Week next week. Did you get your tickets?"
     junior_gd "No, it's always the same big studios with the same IPs showing trailers I will see on the net anyway."
-    junior_artist "Including our company."
+    artist "Including our company."
     junior_gd "Including our company."
     mc "I saw they had an indie square too."
-    junior_programmer "Yeah, but it's pretty small right? Indies still seem pretty marginal on the market."
-    mc "Really? I think that put together, they are bigger than AAA in terms of sales and time spent."
-    junior_programmer "You're sure? Between free-to-play and premium with season passes, people spend a lot of time and money on big games."
-    junior_artist "Yesterday, I had 100 hours on Monster Hunter World..."
-    mc "Oh... (yet it was just released last month?)"
-    "I notice it's time to go back to work, so I greet them and throw what's left of my lunch bag in the bin."
+    junior_programmer "Yeah, but it's pretty small right? Indies are still marginal on the market."
+    mc "Really? I think that if you put together sales and time spent, they are bigger than AAA."
+    junior_programmer "You're sure? From free-to-play to premium, people spend a lot of time on big games."
+    artist "Yesterday, I reached 100 hours on Alpha Legend..."
+    "The online game that was released just last month? Wow."
+
+    pause 0.5
+
+    "I notice lunch break is almost over, so I greet them and throw what's left of my lunch bag in the bin."
     "The bins are already full of similar bags. Sure, cardboard and plastic boxes are recyclable, but in such a big company, every action's impact is multiplied by 100."
-    "So I can't help wondering if all this waste is processed right, or we're just part of another ecological disaster."
-    "Once I'm done, I go back to my desk."
+    "Is everything alright, or is it another ecological disaster?"
+
+    pause 0.5
+
+    "Anyway, time to go back to work!"
     jump s2_2

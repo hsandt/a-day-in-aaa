@@ -15,6 +15,7 @@ define associate_lead_programmer = Character("Associate Lead programmer", color=
 define associate_lead_artist = Character("Associate Lead artist", color="#247173")
 define associate_lead_gd = Character("Associate Lead game designer", color="#712473")
 define associate_lead_ui_designer = Character("Associate Lead UI designer", color="#9c23a6")
+define fast_food_clerk = Character("Fast food clerk", color="#b95c00")
 
 # Story event flags
 default extensible_architecture = False
