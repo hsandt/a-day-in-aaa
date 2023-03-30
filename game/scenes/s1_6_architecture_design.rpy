@@ -50,7 +50,7 @@ label .intro:
 
     pause 0.8
 
-    "Anyway, here is my task for the incoming days: make the character shout a victory cry and play an upper-body animation when they kill a strong enemy."
+    "Anyway, here is my task for the incoming days: make the character shout a victory cry and play an upper-body animation when they beat a strong enemy."
     "Since the game is in an advanced stage of development, the character can already do all their main moves. So we are mostly adding advanced moves or aesthetic features like these now."
     "Though they all contribute to polishing the game, so they shouldn't be underestimated."
 
@@ -59,18 +59,22 @@ label .intro:
     jump .feature_specs
 
 label .feature_specs:
-    "Before diving into the code, I should ask the game designer for more details on the grunt feature."
+    "Before diving into the code, I should ask the game designer for more details on the new feature."
+
     play sound audio.sfx.keyboard_typing_strong
-    "I open Skype and send him a message, asking about the wanted behavior of the character, such as exact trigger conditions for the grunt."
-    "While waiting for his answer, I open Visual Studio (it's a bulky app to write code). While Visual Studio opens, I start a YouTube video on –"
+    "I open Skype and send him a message, asking about additional information like what a \"strong enemy\" means."
+    "While I wait for an answer, I open Visual Studio, a bulky programming app for Windows. While Visual Studio opens, I start a YouTube video on —"
 
     gd "Hey! I saw your message."
-    "I turn back and see the game designer right behind me. Oh, right, I always forget he's setting two desks behind."
-    gd "The dude should grunt when he's hit by damage above a certain threshold, or special damage like fire. I've sent you the design doc for the feature specs."
+
+    "I turn back and see the game designer standing just behind me. Right, he was sitting just two desks away."
+
+    gd "So, the idea is that an enemy at least 10 levels above the player is considered \"strong\". Beating it will make the dude boast. And \"beating\" is basically killing, having the enemy surrender also works."
+    gd "I've sent you the feature specs for more details."
     mc "Okay, thanks!"
 
     # feature specs explanation
-    "The designer goes back to his desk as I notice a new email linking to the 'feature specs'."
+    "As the designer goes back to his desk, I notice a new email linking to the 'feature specs'."
     "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
     "To be honest, while other development environments may have proper requirements, things are more flexible in video games."
     "It's common that programmers tweak things a bit to make the feature easier to code or extend, as long as designers are okay."
@@ -79,26 +83,28 @@ label .feature_specs:
 
 label .architecture:
     "But let's keep the details for later. For now, I'll try to code something simple that does the job in most cases."
-    "I grab my notebook (graciously offered by the company), and start sketching some possible ways to implement the feature. As usual, each method has advantages and disadvantages..."
+    # TODO SFX: add pen SFX
+    "I grab my notebook (graciously offered by the company), and start sketching some possible ways to implement the feature. As usual, each method has pros and cons..."
+    "Method A: Be specific\nCheck for enemy death or surrender and level directly in code, then play the victory cry and pose if it's high enough."
+    "It should be faster to code (probably finished by the end of the day), but less flexible."
+    "Method B: Be generic\nCheck for generic condition on enemy status, then play an arbitrary voice and animation if the condition is verified."
     # Below, MC underestimates the actual time the generic solution will take. In reality, it will take 2x more time than expected.
-    "a. Be specific: check for high and special damage directly in code, then play the grunt and 'badly hurt' animation."
-    "It should be faster to code, probably finished by the end of the day, but less extensible."
-    "b. Be generic: check for any damage received, then play an arbitrary voice and animation accordingly."
-    "It should take longer to code, maybe 2 days, but extensible: designers will be able to edit the type of damage, voice and animation to add similar character reactions later."
-    "I'm tempted to go with a. first, so I can finish my task today, and then maybe extend with b. later when we need a new animation."
-    "But I fear that we'll never have the courage to switch to the more generic solution and keep adding more and more specific code, as usual."
-    "What way do I go?"
+    "It should take longer to code, maybe 2 days, but flexible: designers will be able to edit the condition for being \"strong\" and play different voices and animations depending on whether the enemy was killed or surrendered."
+    "The classic process is to start specific (A) to get something to work early, then extend to more generic code (B) when we need to handle more cases."
+    "However, programmers know by experience that designers are likely to change conditions and effects later in development. As a result, thinking ahead and making the behavior flexible from the start is often beneficial."
+    "There is also a risk that I start with method A, but nobody will have the courage to switch to B later, so we'll keep adding more and more rules coupled with exceptions, turning the codebase into a grammar handbook."
+    "So, what way do I go?"
 
     menu:
-        "Be specific and code fast to make it work":
+        "A: Be specific: code fast to make it work early":
             $ store.extensible_architecture = False
             "Let's make it quick!"
-        "Be generic and take time to make an extensible system":
+        "B: Be generic: take time to make a flexible system for later":
             $ store.extensible_architecture = True
-            "Let's write something clean and usable in the future!"
+            "Let's write something clean and easily reusable in the future!"
 
     play sound audio.sfx.keyboard_typing_strong
-    "I dive into the project to find the correct places to plug the new functionality, and start adding new code."
+    "I dive into the project's source code to find the correct places to plug the new behavior, and start coding."
 
     jump s2_1
 
