@@ -87,6 +87,8 @@ label .break_end:
 
     "Visual Studio has just finished opening, so I use this as an excuse to escape this conversation before this all turns into a scene of SC2VN."
 
+    pause 0.5
+
     # TODO: other devs wearing playing hardcore game?
 
     jump s4_1

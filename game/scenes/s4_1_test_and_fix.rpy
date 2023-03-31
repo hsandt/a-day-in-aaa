@@ -1,5 +1,5 @@
+# Scene IV.1: Test and fix
 label s4_1:
-    "Scene IV.1: Test and fix"
     jump .intro
 
 label .intro:
@@ -7,11 +7,26 @@ label .intro:
 
 label .testing:
     play sound audio.sfx.keyboard_typing_strong
-    "I spend a few hours coding the new feature, using the architecture I considered this morning."
-    "I spot a few bugs in my first implementation, so I go through a few more iterations to improve the code."
-    "My biggest issue, as usual, is that it takes a lot of time to recompile the code after each change to test it."
+    "Back to work, I get the latest code changes in the project to make sure I'm up-to-date. I then start coding the victory cry, using the method I considered this morning."
+
+    if extensible_architecture:
+        "Writing a generic system will take a few days and require a big code change at once, but it generally makes designers and other programmers happy."
+        "Plus, nothing prevents me from adding elements bit by bit, like the victory cry first, and then the pose."
+    else:
+        "I'll just add minimal code to get the job done, so that means less stress and a smaller code change to have reviewed by other programmers."
+
+    pause 0.5
+
+    "I hit compile to test my first draft."
+    "Compiling code is a necessary step to run the application in some programming languages, like the one we're using."
+    "The problem on big games is that it can take quite a lot of time, esp. after adding new files or other structural changes."
+    "Considering the new files I added for the first draft {i}and{/i} the ones added by other programmers that I just retrieved from the latest code changes, the first compilation will be pretty long, probably 3 to 5 minutes."
     "Fortunately, there are always things to do during the compilation. Some watch videos or read comics, some chat with their colleagues."
-    "In my case, I like reading programming articles or books. I know it sounds crazy inserting more work inside work, but it keeps me in the flow."
+    "Personally, I like reading programming articles or books. I know it sounds crazy inserting more work inside work, but it keeps me in the flow."
+
+    # TODO: move after 1st compilation
+    # "I spot a few bugs in my first implementation, so I go through a few more iterations to improve the code."
+    # "Further compilations should be faster, thanks to a few tricks we use to optimize small incremental changes."
     jump .lead_designer_comes_back
 
 label .lead_designer_comes_back:
