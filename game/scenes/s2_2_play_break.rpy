@@ -62,7 +62,7 @@ label .break_end:
     "The mood is slowly becoming more serious in the room. People are getting back to work, speaking less and typing more."
     "I quickly glance at the room to check that nobody cares about me and my Terran base."
     "They don't seem to. Yet, as time goes on, I feel an invisible pressure growing on my back."
-    "The Zergs eventually defeat me. But I feel released, as I can finally close the game and avoid further suspicion."
+    "As the Zergs eventually defeat me, I paradoxically feel relieved, as I can finally close the game and avoid further suspicion."
 
     pause 0.5
 
@@ -73,14 +73,9 @@ label .break_end:
 
     "My colleague sighs, looking terribly disappointed."
 
-    junior_gd "I expected more from you. What's your build order?"
-    mc "My build?{w=0.8} Oh, right.{w=0.8} Er...{w=0.8} Barracks...{w=0.8} Supply Depot...{w=0.8} Refinery?"
-    junior_gd "You need to know it by heart, or you'll get crushed!"
-    mc "Erm... right."
-
-    pause 0.5
-
-    "Visual Studio has just finished opening, so I use this as an excuse to escape this conversation before this all turns into a scene of SC2VN."
+    junior_gd "Okay, what's your build order?"
+    mc "My build... ?{w=0.8} Oh, right.{w=0.8} Er...{w=0.8} Barracks...{w=0.8} Supply Depot...{w=0.8} Refinery... ?"
+    "Visual Studio finishes opening right at that moment, giving me an excuse to escape the surprise test before this whole thing turns into a scene straight out of SC2VN."
 
     pause 0.5
 
