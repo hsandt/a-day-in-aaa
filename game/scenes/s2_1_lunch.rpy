@@ -57,15 +57,15 @@ label .office_lunch:
     jump .table
 
 label .table:
-    junior_programmer "There is Paris Games Week next week. Did you get your tickets?"
+    junior_gameplay_programmer "There is Paris Games Week next week. Did you get your tickets?"
     junior_gd "No, it's always the same big studios with the same IPs showing trailers I will see on the net anyway."
-    artist "Including our company."
+    ui_artist "Including our company."
     junior_gd "Including our company."
     mc "I saw they had an indie square too."
-    junior_programmer "Yeah, but it's pretty small right? Indies are still marginal on the market."
+    junior_gameplay_programmer "Yeah, but it's pretty small right? Indies are still marginal on the market."
     mc "Really? I think that if you put together sales and time spent, they are bigger than AAA."
-    junior_programmer "You're sure? From free-to-play to premium, people spend a lot of time on big games."
-    artist "Yesterday, I reached 100 hours on Alpha Legend..."
+    junior_gameplay_programmer "You're sure? From free-to-play to premium, people spend a lot of time on big games."
+    ui_artist "Yesterday, I reached 100 hours on Alpha Legend..."
     "The online game that was released just last month? Wow."
 
     pause 0.5

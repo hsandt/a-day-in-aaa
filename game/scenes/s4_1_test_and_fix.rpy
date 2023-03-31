@@ -39,27 +39,27 @@ label .lead_designer_comes_back:
     "While we're often told that the hierarchy is flat in the studio, truth is, the big leads would rarely come and talk to us without a very good reason."
     "On the contrary, it's pretty common to see associate leads wander around."
 
-    gd "How was it?"
+    progression_gd "How was it?"
     associate_lead_gd "Not bad... I showed them my proposal for gradual loot quality increase over play time."
-    gd "Let me guess... the producer rejected it with no good reason?"
+    progression_gd "Let me guess... the producer rejected it with no good reason?"
     associate_lead_gd "Not exactly... He just redrew the curve a little to make sure players spend a little more time playing before they get better gear."
     associate_lead_gd "Four hours here... Five hours there..."
-    gd "That's ridiculous. We talked about one hour per level last time. Typical of mindless RPG-ization."
-    gd "The point of progression design is to increase the game's lifespan, but it doesn't help if the player gets bored and drops before the end."
+    progression_gd "That's ridiculous. We talked about one hour per level last time. Typical of mindless RPG-ization."
+    progression_gd "The point of progression design is to increase the game's lifespan, but it doesn't help if the player gets bored and drops before the end."
 
     "So, usually, the producer's job is to make sure the team can properly work on the product and release it in time."
     "But here, anyone with a high place in the hierarchy can give their opinion on anything."
     "Which would be great... if the process was democratized and led to actual discussions."
 
     associate_lead_gd "Also, he pushed a request to add paragliding. He found it cool when he tried Alpha Legend the other day."
-    gd "The game that was released last week? Okay, sure, but we've already designed most of the map with simple climbing and jumping abilities in mind."
-    gd "Adding paragliding would break the level design!"
+    progression_gd "The game that was released last week? Okay, sure, but we've already designed most of the map with simple climbing and jumping abilities in mind."
+    progression_gd "Adding paragliding would break the level design!"
 
     "Now I'm surprised. I can understand a little tweak here and there, but it's hard for me to believe the producer would go that far. I mean, when I saw him during the big meeting with everyone, he looked nice."
     "From twenty meters away."
 
     associate_lead_gd "I tried to explain that, but we'll need the lead level designer's support on this."
-    gd "Okay, let's have a talk with her."
+    progression_gd "Okay, let's have a talk with her."
 
     "I see, so the associate leads act like a bridge between the top management and their team."
     "Or rather, they act like a shield, doing all the negotiations to find the best middle ground for their team."

@@ -65,12 +65,12 @@ label .feature_specs:
     "I open Skype and send him a message, asking about additional information like what a \"strong enemy\" means."
     "While I wait for an answer, I open Visual Studio, a bulky programming app for Windows. While Visual Studio opens, I start a YouTube video on —"
 
-    gd "Hey! I saw your message."
+    character_gd "Hey! I saw your message."
 
     "I turn back and see the game designer standing just behind me. Right, he was sitting just two desks away."
 
-    gd "So, the idea is that an enemy at least 10 levels above the player is considered \"strong\". Beating it will make the dude boast. And \"beating\" is basically killing, having the enemy surrender also works."
-    gd "I've sent you the feature specs for more details."
+    character_gd "So, the idea is that an enemy at least 10 levels above the player is considered \"strong\". Beating it will make the dude boast. And \"beating\" is basically killing, having the enemy surrender also works."
+    character_gd "I've sent you the feature specs for more details."
     mc "Okay, thanks!"
 
     "I actually enjoy these chatting moments, they make me feel part of the team and responsible for my tasks."

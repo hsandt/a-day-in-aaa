@@ -31,17 +31,12 @@ label .play_game:
 label .colleagues_arrive:
     "As the end of lunch break draws nearer, I see more and more colleagues coming back to the room."
 
-    programmer "So, how was the gym?"
-    artist "It was fine, but the leg machine was broken. {i}Again{/i}."
-    programmer "Like our codebase."
-    artist "And you? How was improv?"
-    programmer "Great! The new guy had some hilarious lines!"
-    programmer ".{w=0.2}.{w=0.2}.{w=0.5} like our codebase."
-
-    # Alternative dialogue
-    # programmer "So, how was the gym?"
-    # artist "Fine, but the leg machine was broken, so I had to improvize. Speaking of, how was the improv club?"
-    # programmer "Great! The new guy had some hilarious rejoinders!"
+    ui_programmer "So, how was the gym?"
+    level_artist "It was fine, but the leg machine was broken. {i}Again{/i}."
+    ui_programmer "Like our codebase."
+    level_artist "And you? How was improv?"
+    ui_programmer "Great! The new guy had some hilarious lines!"
+    ui_programmer ".{w=0.2}.{w=0.2}.{w=0.5} like our codebase."
 
     "I realize how other developers have regularly been practicing healthy or artistic activities. Maybe I should join a club too?"
     ".{w=0.4}.{w=0.4}.{w=0.8} or, I could keep sitting here and playing every noon, as usual."
@@ -78,9 +73,9 @@ label .break_end:
 
     "My colleague sighs, looking terribly disappointed."
 
-    neighbor_gd "I expected more from you. What's your build order?"
+    junior_gd "I expected more from you. What's your build order?"
     mc "My build?{w=0.8} Oh, right.{w=0.8} Er...{w=0.8} Barracks...{w=0.8} Supply Depot...{w=0.8} Refinery?"
-    neighbor_gd "You need to know it by heart, or you'll get crushed!"
+    junior_gd "You need to know it by heart, or you'll get crushed!"
     mc "Erm... right."
 
     pause 0.5
