@@ -75,12 +75,21 @@ label .satisfaction:
     jump .work_end
 
 label .work_end:
+    "Anyway, back on my task. I search for some music on YouTube and find a video named \"2-hour Ultra Epic Motivational Anime OST Collection\". It's full of series I haven't even watched, but I'll trust it."
+
     play sound audio.sfx.keyboard_typing_strong
     "I keep working on my task until I'm satisfied with the result. This requires a few more iterations."
     "Fortunately, compilations are faster after the first time, so further work is smoother."
+
     # TODO: either create an even quieter variant of ambient sound, or manually decrease volume
     # (but will also affect own keyboard/mouse SFX integrated in ambient sound)
-    "I see that it's getting late, and most of the employees have already left."
+    "After more work (interspersed with company chat), I see that it's getting late, and most of the employees have already left."
+    "The room is now much quieter, and keyboard sounds are taking over voices. I kinda like this ambiance, and I'm generally quite productive in these last hours of work."
+    "Some researches say we are only productive for 4 hours of office work. That sounds extreme, but if it's true, I should definitely ask for a special permission to come at the office in the afternoon."
+
+    pause 0.5
+
+    "I'll probably leave soon too, so let's assess the work done today."
 
     if extensible_architecture:
         "Half of the behavior is working, but as expected, writing a generic solution takes quite a lot of time. so I suppose I'll finish this another day."
