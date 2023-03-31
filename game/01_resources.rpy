@@ -1,5 +1,9 @@
 # Images
 
+## Overlay
+
+image overlay black = Solid("#000000")
+
 ## Backgrounds (2560x1440)
 
 image bg empty_canvas = "images/bg/empty_canvas.jpg"
