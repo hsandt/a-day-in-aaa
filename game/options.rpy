@@ -98,12 +98,12 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = Dissolve(0.5)
 
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = Dissolve(1.0)
 
 
 ## A variable to set the transition used when the game starts does not exist.
