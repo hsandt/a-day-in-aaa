@@ -3,15 +3,19 @@ label s4_4:
     jump .intro
 
 label .intro:
-    scene bg tram
+    scene bg tram with Dissolve(1.0)
     $ audio_stopFade(2.0)
 
     "I exit the company building and take the tram back home."
     jump .work
 
 label .work:
-    scene bg apartment desktop
+    scene bg empty_canvas with Dissolve(1.0)
+
     "Back in my apartment, I hang my coat and have a drink."
+
+    scene bg apartment desktop with dissolve
+
     "I'm a little tired, but I soon find myself sitting at my desktop and booting my laptop."
 
     pause 0.5
@@ -41,6 +45,8 @@ label .work:
     jump .eating
 
 label .eating:
+    scene bg empty_canvas with dissolve
+
     "At half past eight, I realize I should have dinner. Drat! No leftovers in the fridge. I need to cook something."
     "Too tired for a proper recipe, I decide to go with my legendary seasoned steamed vegetables."
     "I let the cooking machine do its job so I can gain a few more minutes of work."
@@ -59,6 +65,8 @@ label .choice:
             jump .relax
 
 label .more_work:
+    scene bg apartment desktop with dissolve
+
     "Okay, just one last fix."
     play sound audio.sfx.keyboard_typing_weak
     ".{w=0.5}.{w=0.5}."
@@ -67,6 +75,9 @@ label .more_work:
     "It would be cool to hire some people, but that's a vicious circle: I need a good demo to attract other developers, and I need an artist and a level designer to make a cool demo."
     "It sure is nice working in a studio..."
     "Finally done with my work, I shut down my laptop and go to sleep."
+
+    scene bg empty_canvas with dissolve
+
     jump .sleep
 
 label .relax:
@@ -77,12 +88,36 @@ label .relax:
     jump .sleep
 
 label .sleep:
-    "Well, I did good a job today, on both my projects."
-    "Still, about that variable..."
-    mc "Oh no, I needed to initialize it!"
-    scene overlay black
+    "Well, I did good a job today, on both of my projects. I deserve a good night's rest."
+
+    pause 0.5
+
+    scene overlay black with Dissolve(1.0)
+
+    pause 0.5
+
+    ".{w=0.5}.{w=0.5}."
+
+    pause 2.0
+
+    mc "Oh no!{w=1.0} I forgot to remove the debug line!"
+
+    pause 2.5
+
     jump .end
 
 label .end:
-    hide bg with fade
+    # Note: with dissolve only applies to fade-in, there is no fade-out
+    credits "{b}A Day in AAA{/b}\n\nCredits" with dissolve
+    pause 1.0
+    credits "{b}komehara{/b}\n\nWriting, Scripting, Background art" with dissolve
+    pause 1.0
+    credits "{b}komehara{/b}\n\nAmbient sound and SFX recording and mixing" with dissolve
+    pause 1.0
+    credits "{b}Audio utils{/b}\n\nCode snippet by Mole" with dissolve
+    pause 1.0
+    credits "{b}Special thanks{/b}\n\nOffice employees, for the sounds and inspiration" with dissolve
+
+    pause 2.0
+
     pass

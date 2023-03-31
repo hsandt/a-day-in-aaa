@@ -29,7 +29,13 @@ label .testing:
     "The game editor suddenly pops up, telling me what it has finished compiling. I run the sandbox to test the character behavior, and spot a few bugs in this first version."
     "I debug a bit what is happening through the code, but I realize most of the mistakes are trivial. I could have avoided them by paying more attention."
     "It's often faster to write a little, then test and improve code over many iterations than trying to handle all the cases at once. However, when compilation time is long, it's worth thinking more ahead."
-    "As I close the editor and start fixing the issues, I see an associate lead game designer joining the designers behind me."
+    "I close the game editor and start fixing the issues."
+    "To make it easier to debug the victory cry repeatedly, I also add a debug line: a temporary line of code that bypasses some conditions and triggers the cry in more cases than it should."
+    "Of course, I need to remember removing it before I submit the change."
+
+    pause 0.5
+
+    "A few minutes later, I see an associate lead game designer joining the designers behind me."
 
     jump .lead_designer_comes_back
 
@@ -82,11 +88,10 @@ label .work_end:
     play sound audio.sfx.keyboard_typing_strong
     "I keep working on the victory feedback over a few more iterations."
     "Fortunately, compilations are faster after the first time, so further iterations are faster."
-    "I still have a doubt about that \"last defeated enemy\" variable though. Should I initialize it to be safe? No, it should be good."
 
     # TODO: either create an even quieter variant of ambient sound, or manually decrease volume
     # (but will also affect own keyboard/mouse SFX integrated in ambient sound)
-    "After more work (interspersed with company chat), I see that it's getting late, and most of the employees have already left."
+    "After more work (interspersed with company chat involving latest game releases, and pets), I see that it's getting late. Most of the employees have already left."
     "The room is now much quieter, and keyboard sounds are taking over voices. I kinda like this ambiance, and I'm generally quite productive in these last hours of work."
     "Some researches say we are only productive for 4 hours of office work. That sounds extreme, but if it's true, I should definitely ask for a special permission to come at the office in the afternoon."
 
@@ -95,7 +100,8 @@ label .work_end:
     "I'll probably leave soon too, so let's assess the work done today."
 
     if extensible_architecture:
-        "Half of the behavior is working, but as expected, writing a generic solution takes quite a lot of time. so I suppose I'll finish this another day."
+        "Half of the behavior is working, but as expected, writing a generic solution takes quite a lot of time. There are also a few odd cases where the player character plays the victory cry when they shouldn't."
+        "So, I suppose I'll finish this another day."
     else:
         "It was easy to write the specific code, so the feature is ready to be reviewed. A \"code review\" is a process where another programmer goes through a code change to spot potential issues; or bad formatting."
         "I turn to one of the remaining programmers."

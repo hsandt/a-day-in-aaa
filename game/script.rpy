@@ -22,6 +22,9 @@ define associate_lead_artist = Character("Associate lead artist", color="#71265f
 
 define fast_food_clerk = Character("Fast food clerk", color="#b95c00")
 
+# Center text frame, text lines and window
+define credits = Character(None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5)
+
 # Story event flags
 default extensible_architecture = False
 
