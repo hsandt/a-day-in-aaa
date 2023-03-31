@@ -57,19 +57,44 @@ label .lead_designer_comes_back:
 
     "In my previous studios, we got some unreasonable demands from our publisher, and our producer was acting like a shield between them and our team. In Black Rooster, we are self-published, so everything is offset."
     "We need a good producer and leads, or the associate leads become the new shields."
+
+    pause 0.5
+
     jump .satisfaction
 
 label .satisfaction:
-    "On my side, I prefer keeping a low profile and just get the job done."
-    "... Before I joined the game industry, I complained a lot about how developers handled their projects, but I could do nothing as a player to change it."
-    "I wanted to become a game developer to change that from the inside. But as I feared, in a big company like this, I just feel like a pawn again."
-    "All I can do is make sure at least my code is not too bad."
+    "So back on that paragliding thing... is there anything I could do to help as a programmer?"
+    "If the designers don't manage to reject that feature, and it falls on me to implement it, would I have the courage to just... refuse? And what would that change, if somebody else does it in the end?"
+
+    pause 0.5
+
+    "... Bah, it's not like they'll give such a big task to a fresh recruit like me."
+
+    pause 0.5
+
     jump .work_end
 
 label .work_end:
-    "I keep working on my task until I'm satisfied with the result."
-    "Fortunately, the \"tech team\" (programmers that work on the underlying tech rather than gameplay or UI) set up a few tricks to reduce iteration times, so it should only last 1 or 2 minutes this time."
-    "(If you chose the quick solution in Scene I.6, the task ends here and MC asks a colleague for review)"
-    "(Otherwise, the task is not over yet, and MC will have to finish later)"
-    "Time for code review! (TODO)"
+    play sound audio.sfx.keyboard_typing_strong
+    "I keep working on my task until I'm satisfied with the result. This requires a few more iterations."
+    "Fortunately, compilations are faster after the first time, so further work is smoother."
+    # TODO: either create an even quieter variant of ambient sound, or manually decrease volume
+    # (but will also affect own keyboard/mouse SFX integrated in ambient sound)
+    "I see that it's getting late, and most of the employees have already left."
+
+    if extensible_architecture:
+        "Half of the behavior is working, but as expected, writing a generic solution takes quite a lot of time. so I suppose I'll finish this another day."
+    else:
+        "It was easy to write the specific code, so the feature is ready to be reviewed. A \"code review\" is a process where another programmer goes through a code change to spot potential issues; or bad formatting."
+        "I turn to one of the remaining programmers."
+        mc "Mind doing a code review?"
+        lead_gameplay_programmer "What is it about?"
+        mc "Playing the victory shout and pose when beating a strong enemy."
+        lead_gameplay_programmer "Hmm... I could review the code change, but we should avoid submitting it so late, to avoid bad surprises tomorrow, when designers and artists download the midnight build."
+        mc "Tomorrow, then?"
+        lead_gameplay_programmer "Sure."
+
+    pause 0.5
+
+    "I check for new messages on my computer one last time and shut down the computer."
     jump s4_4

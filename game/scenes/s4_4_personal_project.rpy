@@ -8,7 +8,7 @@ label .intro:
     # play music apartment.music
     $ audio_stopFade(2.0)
 
-    "After finishing work, I take the tram back home."
+    "I leave the company and take the tram back home."
     jump .work
 
 label .work:
