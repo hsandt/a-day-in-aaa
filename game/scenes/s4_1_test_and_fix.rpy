@@ -24,19 +24,22 @@ label .testing:
     "Fortunately, there are always things to do during the compilation. Some watch videos or read comics, some chat with their colleagues."
     "Personally, I like reading programming articles or books. I know it sounds crazy inserting more work inside work, but it keeps me in the flow."
 
-    # TODO: move after 1st compilation
-    # "I spot a few bugs in my first implementation, so I go through a few more iterations to improve the code."
-    # "Further compilations should be faster, thanks to a few tricks we use to optimize small incremental changes."
+    pause 0.5
+
+    "The game editor suddenly pops up, telling me what it has finished compiling. I run the sandbox to test the character behavior, and spot a few bugs in this first version."
+    "I debug a bit what is happening through the code, but I realize most of the mistakes are trivial. I could have avoided them by paying more attention."
+    "It's often faster to write a little, then test and improve code over many iterations than trying to handle all the cases at once. However, when compilation time is long, it's worth thinking more ahead."
+    "As I close the editor and start fixing the issues, I see an associate lead game designer joining the designers behind me."
+
     jump .lead_designer_comes_back
 
 label .lead_designer_comes_back:
-    associate_lead_gd "Hey!"
-    "... at least, until somebody comes. I turn around my chair and see an enthusiastic associate lead game designer."
-    "While the open space is flat, the hierarchy is still prominent as you'd expect, so the big leads rarely come as far as this corner of the studio."
-    "On the contrary, it's pretty common that associate leads directly talk to us."
-    "In this case though, he was addressing his fellow designers."
+    associate_lead_gd "Okay, I got news from the meeting!"
 
-    gd "How was the meeting?"
+    "While we're often told that the hierarchy is flat in the studio, truth is, the big leads would rarely come and talk to us without a very good reason."
+    "On the contrary, it's pretty common to see associate leads wander around."
+
+    gd "How was it?"
     associate_lead_gd "Not bad... I showed them my proposal for gradual loot quality increase over play time."
     gd "Let me guess... the producer rejected it with no good reason?"
     associate_lead_gd "Not exactly... He just redrew the curve a little to make sure players spend a little more time playing before they get better gear."
@@ -73,6 +76,7 @@ label .satisfaction:
 
 label .work_end:
     "I keep working on my task until I'm satisfied with the result."
+    "Fortunately, the \"tech team\" (programmers that work on the underlying tech rather than gameplay or UI) set up a few tricks to reduce iteration times, so it should only last 1 or 2 minutes this time."
     "(If you chose the quick solution in Scene I.6, the task ends here and MC asks a colleague for review)"
     "(Otherwise, the task is not over yet, and MC will have to finish later)"
     "Time for code review! (TODO)"
