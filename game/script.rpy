@@ -23,7 +23,8 @@ define associate_lead_artist = Character("Associate lead artist", color="#71265f
 define fast_food_clerk = Character("Fast food clerk", color="#b95c00")
 
 # Center text frame, text lines and window
-define credits = Character(None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5)
+define disclaimer = Character(None, window_background=None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5, what_color="#ffffff")
+define credits = Character(None, window_background=None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5, what_color="#ffffff")
 
 # Story event flags
 default extensible_architecture = False
@@ -33,6 +34,21 @@ label start:
 
     # Hide the text box during pause statements, as no text is shown
     window hide
+
+    # FIXME: initial transition doesn't seem to work, not sure why
+    # scene overlay black with Dissolve(1.0)
+
+    pause 1.5
+
+    disclaimer "This work of fiction was inspired by various companies and developers. The company names portrayed in this production are fictitious, but notorious events, games and tools are designated by their real names." with dissolve
+
+    disclaimer "The story, characters, and incidents are also fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred." with dissolve
+
+    pause 1.0
+
+    disclaimer "... probably." with dissolve
+
+    pause 2.0
 
     jump s1_6
     return
