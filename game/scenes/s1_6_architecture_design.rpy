@@ -98,10 +98,10 @@ label .architecture:
     "So, what way do I go?"
 
     menu:
-        "A: Be specific: code fast to make it work early":
+        "A. Be specific: code fast to make it work early":
             $ store.extensible_architecture = False
             "Let's make it quick!"
-        "B: Be generic: take time to make a flexible system for later":
+        "B. Be generic: take time to make a flexible system for later":
             $ store.extensible_architecture = True
             "Let's write something clean and easily reusable in the future!"
 
