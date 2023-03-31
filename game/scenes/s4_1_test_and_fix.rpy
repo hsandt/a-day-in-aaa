@@ -34,10 +34,11 @@ label .testing:
     jump .lead_designer_comes_back
 
 label .lead_designer_comes_back:
+    scene bg office open_plan with dissolve
     associate_lead_gd "Okay, I got news from the meeting!"
 
-    "While we're often told that the hierarchy is flat in the studio, truth is, the directors of each section would rarely come and talk to us without a very good reason."
-    "In fact, I've only seen them a few times, from twenty meters away, during those crowded meetings with {i}everyone{/i}."
+    "While we're often told that the hierarchy is flat in the studio, truth is, the directors of each section would rarely come and talk to us, in that corner of the studio, without a very good reason."
+    "In fact, I've only seen them a few times, from twenty meters away. You know, during those crowded meetings with {i}every employee{/i}."
     "On the contrary, it's pretty common to see associate leads wander around, as they act like a bridge between the upper and lower layers."
 
     progression_gd "How did they find the design of loot quality increase over play time?"
@@ -63,7 +64,7 @@ label .lead_designer_comes_back:
     jump .satisfaction
 
 label .satisfaction:
-    "So back on that paragliding thing... is there anything I could do to help as a programmer?"
+    "About that paragliding thing... is there anything I could do to help as a programmer?"
     "If the designers don't manage to reject that feature, and it falls on me to implement it, would I have the courage to just... refuse? And what would that change, if somebody else does it in the end?"
 
     pause 0.5
@@ -75,11 +76,12 @@ label .satisfaction:
     jump .work_end
 
 label .work_end:
+    scene bg office desktop with dissolve
     "Anyway, back on my task. I search for some music on YouTube and find a video named \"2-hour Ultra Epic Motivational Anime OST Collection\". It's full of series I haven't even watched, but I'll trust it."
 
     play sound audio.sfx.keyboard_typing_strong
     "I keep working on my task until I'm satisfied with the result. This requires a few more iterations."
-    "Fortunately, compilations are faster after the first time, so further work is smoother."
+    "Fortunately, compilations are faster after the first time, so further iterations are faster."
 
     # TODO: either create an even quieter variant of ambient sound, or manually decrease volume
     # (but will also affect own keyboard/mouse SFX integrated in ambient sound)
