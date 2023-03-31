@@ -3,7 +3,9 @@ label s1_6:
     jump .intro
 
 label .intro:
-    scene bg office open_plan
+    scene overlay black
+
+    scene bg office open_plan with Dissolve(1.0)
     play music office_open_plan
 
     # punchy intro
