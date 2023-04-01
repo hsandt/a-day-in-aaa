@@ -1,7 +1,12 @@
 # Images
 
+## Overlay
+
+image overlay black = Solid("#000000")
+
 ## Backgrounds (2560x1440)
 
+image bg empty_canvas = "images/bg/empty_canvas.jpg"
 image bg office open_plan = "images/bg/office_open_plan.jpg"
 image bg office desktop = "images/bg/office_desktop.jpg"
 image bg office eating_area = "images/bg/office_eating_area.jpg"
