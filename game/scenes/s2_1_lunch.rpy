@@ -54,6 +54,9 @@ label .office_lunch:
 
     # INSERT SITTING CHOICE HERE - for now, auto-choose table with juniors
     "I find a table with some people I recognize and join the discussion."
+
+    pause 1.0
+
     jump .table
 
 label .table:

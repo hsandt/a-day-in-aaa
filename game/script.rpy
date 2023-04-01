@@ -40,7 +40,7 @@ label start:
 
     pause 1.5
 
-    disclaimer "This work of fiction was inspired by various companies and developers. The company names portrayed in this production are fictitious, but notorious events, games and tools are designated by their real names." with dissolve
+    disclaimer "This work of fiction was inspired by various companies and developers.\nThe company names and some game names portrayed in this production are fictitious, but notorious events, games and tools are designated by their real names." with dissolve
 
     disclaimer "The story, characters, and incidents are also fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred." with dissolve
 

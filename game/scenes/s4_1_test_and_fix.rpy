@@ -62,7 +62,7 @@ label .lead_designer_comes_back:
     associate_lead_gd "I tried to explain that, but we'll need the lead level designer's support on this."
     character_gd "Okay, let's have a talk with her."
 
-    "In my previous studios, we got some unreasonable demands from our publisher, and our producer was acting like a shield between them and our team. In Black Rooster, we are self-published, so everything is offset."
+    "In my previous studio, we got some unreasonable demands from our publisher, and our producer was acting like a shield between them and our team. In Black Rooster, we are self-published, so everything is offset."
     "We need a good producer and leads, or the associate leads become the new shields."
 
     pause 0.5
@@ -87,12 +87,12 @@ label .work_end:
 
     play sound audio.sfx.keyboard_typing_strong
     "I keep working on the victory feedback over a few more iterations."
-    "Fortunately, compilations are faster after the first time, so further iterations are faster."
+    "Fortunately, compilations are faster after the first time."
 
     # TODO: either create an even quieter variant of ambient sound, or manually decrease volume
     # (but will also affect own keyboard/mouse SFX integrated in ambient sound)
     "After more work (interspersed with company chat involving latest game releases, and pets), I see that it's getting late. Most of the employees have already left."
-    "The room is now much quieter, and keyboard sounds are taking over voices. I kinda like this ambiance, and I'm generally quite productive in these last hours of work."
+    "The room is now much quieter, and keyboard sounds are taking over voices. Actually, I kinda like this ambiance, and I'm generally quite productive in these last hours of work."
     "Some researches say we are only productive for 4 hours of office work. That sounds extreme, but if it's true, I should definitely ask for a special permission to come at the office in the afternoon."
 
     pause 0.5
