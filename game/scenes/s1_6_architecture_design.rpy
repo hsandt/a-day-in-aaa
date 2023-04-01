@@ -46,11 +46,11 @@ label .intro:
     "Once the editor is ready, it automatically opens the default scene: a 3D \"sandbox\" made of a variety of geometrical shapes and enemies. It helps us testing various movements and interactions with the player character."
     "System designer, animators and programmers use the sandbox a lot, whereas level designers and level artists generally work directly on actual game areas."
     "But programmers are probably at the edge of the spectrum due to their extreme needs to test things quickly, and some (like me) exclusively use the sandbox."
-    "The good side is that I'm {i}super excited{/i} when I'm testing the actual game — not something many employees would agree with, after spending one year in development and repetitive testing."
+    "The good side is that I'm {i}super excited{/i} when I'm testing the actual game — not something many employees would agree with, after spending one or two years in development and repetitive testing."
 
     pause 0.8
 
-    "Anyway, here is my task for the incoming days: make the character shout a victory cry and play an upper-body animation when they beat a strong enemy."
+    "Anyway, here is my task for the incoming days: make the player character shout a victory cry and play an upper-body animation when they beat a strong enemy."
     "Since the game is in an advanced stage of development, the character can already do all their main moves. So we are mostly adding advanced moves or aesthetic features like these now."
     "Though they all contribute to polishing the game, so they shouldn't be underestimated."
 
@@ -63,24 +63,24 @@ label .feature_specs:
 
     play sound audio.sfx.keyboard_typing_strong
     "I open Skype and send him a message, asking about additional information like what a \"strong enemy\" means."
-    "While I wait for an answer, I open Visual Studio, a bulky programming app for Windows. While Visual Studio opens, I start a YouTube video on —"
+    "While I wait for an answer, I open Visual Studio (a bulky programming app for Windows). While Visual Studio opens, I start a YouTube video on —"
 
     character_gd "Hey! I saw your message."
 
     "I turn back and see the game designer standing just behind me. Right, he was sitting just two desks away."
 
-    character_gd "So, the idea is that an enemy at least 10 levels above the player is considered \"strong\". Beating it will make the dude boast. And \"beating\" is basically killing, having the enemy surrender also works."
+    character_gd "So, the idea is that an enemy at least 10 levels above the player is considered \"strong\". Beating it will make your dude boast. And \"beating\" is basically killing, but having the enemy surrender also works."
     character_gd "I've sent you the feature specs for more details."
     mc "Okay, thanks!"
 
     "I actually enjoy these chatting moments, they make me feel part of the team and responsible for my tasks."
 
     # feature specs explanation
-    "As the designer goes back to his desk, I notice a new email linking to the 'feature specs'."
+    "As the designer goes back to his desk, I notice a new email linking to the \"feature specs\"."
     "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
     "To be honest, while other development environments may have proper requirements, things are more flexible in video games."
     "It's common that programmers tweak things a bit to make the feature easier to code or extend, as long as designers are okay."
-    "There are also many 'edge cases' not described in the feature specs, so both programmers and designers will have to improvize when they encounter them."
+    "There are also many special cases or \"edge cases\" not described in the feature specs, so both programmers and designers will have to improvize when they encounter them."
     jump .architecture
 
 label .architecture:

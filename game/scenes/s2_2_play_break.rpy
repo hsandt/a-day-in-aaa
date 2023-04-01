@@ -11,14 +11,14 @@ label .intro:
 label .watch_play:
     "When I enter the room, I see some of my colleagues playing together some free-to-play title, and others focused on solo indie games."
     "I haven't played online for a while and I don't even know the more recent titles, so I don't think I'll be able to withstand the competition."
-    "I guess I'll just pick a solo game today, as usual."
+    "I guess I'll just pick a solo game, as usual."
     jump .play_game
 
 label .play_game:
     scene bg office desktop with dissolve
     $ audio_crossFade(2.0, "music/office_desktop.ogg")
     # INSERT GAME CHOICE HERE - for now, auto-choose Starcraft II
-    "Let's go with Starcraft II for today. {p}Yeah, it's an online game, but I'm just playing offline for now."
+    "Let's go with Starcraft II this time. {p}Yeah, it's an online game, but I'm just playing offline for now."
     play sound audio.sfx.keyboard_typing_weak
     "After all, my only previous experience with Starcraft was Brood War in the 2000s, so my RTS-fu is a little rusty."
     "But! I beat the AI at Medium level last time... so I try Hard this time!"
@@ -33,10 +33,10 @@ label .colleagues_arrive:
 
     ui_programmer "So, how was the gym?"
     level_artist "It was fine, but the leg machine was broken. {i}Again{/i}."
-    ui_programmer "Like our codebase."
+    ui_programmer "Like our code."
     level_artist "And you? How was improv?"
     ui_programmer "Great! The new guy had some hilarious lines!"
-    ui_programmer ".{w=0.2}.{w=0.2}.{w=0.5} like our codebase."
+    ui_programmer ".{w=0.2}.{w=0.2}.{w=0.5} like our code."
 
     "I realize how other developers have regularly been practicing healthy or artistic activities. Maybe I should join a club too?"
     ".{w=0.4}.{w=0.4}.{w=0.8} or, I could keep sitting here and playing every noon, as usual."
@@ -55,8 +55,8 @@ label .break_end:
     "Before I notice, break time is over, but I haven't finished my game yet. Hard mode sure is tough."
     # INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing
     "Believing in my incoming victory this time, I push the game a little further. But it's now 14:15 and I'm still far from it."
-    "Should I just give up?"
     # INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing
+    "Should I just give up? No, too early for that."
     # TODO: create a variant of office open plan/desktop with louder voices, and play it during the break,
     # but cross fade to the quieter variant now
     "The mood is slowly becoming more serious in the room. People are getting back to work, speaking less and typing more."
@@ -67,7 +67,7 @@ label .break_end:
     pause 0.5
 
     play sound audio.sfx.keyboard_typing_weak
-    "I reopen Visual Studio, which gives me just enough time to turn to my RTS-enthusiast colleague for some advice."
+    "I reopen Visual Studio, which needs some time to launch. This gives me an opportunity to bother my RTS-enthusiast colleague for some advice."
 
     mc "I couldn't beat AI in Hard."
 

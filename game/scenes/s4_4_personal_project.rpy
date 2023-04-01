@@ -40,7 +40,7 @@ label .work:
     play sound audio.sfx.keyboard_typing_weak
     "I decide to write a bug report, but to do that, I need to find the exact sequence of actions that leads to the crash."
     "Gathering my courage, I spend half an hour to find what causes it, and another half writing the bug report."
-    "One hour lost for something I'm not even responsible for? Indie or AAA, development is still development after all."
+    "One hour lost for something I'm not even responsible for? Indie or AAA, software development is still software  development after all."
     # TODO: NO NDA but don't want to post on SNS
     jump .eating
 
@@ -54,6 +54,9 @@ label .eating:
     "The characters talk about how people's sense of justice fades out over time and how they become grayer and grayer when they become adult."
     "I don't feel like I'm selling my soul to my company, but maybe I could do more than what I'm told to?"
     "Hmm... I'm already sending feedback on stuff like accessibility. To go further, I'd need more authority, which I don't have."
+
+    pause 0.8
+
     jump .choice
 
 label .choice:
@@ -74,6 +77,9 @@ label .more_work:
     "Was all this extra work necessary though? My game doesn't seem promising enough to sell and will probably end up like another training project or experiment."
     "It would be cool to hire some people, but that's a vicious circle: I need a good demo to attract other developers, and I need an artist and a level designer to make a cool demo."
     "It sure is nice working in a studio..."
+
+    pause 0.8
+
     "Finally done with my work, I shut down my laptop and go to sleep."
 
     scene bg empty_canvas with dissolve
@@ -81,7 +87,7 @@ label .more_work:
     jump .sleep
 
 label .relax:
-    "I grab some comics and starting reading. This time I picked a comedy, so I won't go through another phase of self-doubt."
+    "I grab some comics and start reading. This time I picked a comedy, so I won't go through another phase of self-doubt."
     "After a few chapters, I close the book and go to sleep."
 
     pause 0.5
