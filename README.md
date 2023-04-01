@@ -12,6 +12,8 @@ See [game page](https://komehara.itch.io/a-day-in-aaa) and [submission page](htt
 * Custom ambient sounds and SFX
 * Custom GUI (WIP)
 
+This v1 contains the most important scenes to make the day meaningful, but I have prepared many additional scenes for future versions. If the game catches enough interest, I'll keep working to add more scenes (and also polish the UI). Otherwise, I'll probably add some stuff anyway, but at my own pace.
+
 ## Tools
 
 * Ren'Py 8.0.3
