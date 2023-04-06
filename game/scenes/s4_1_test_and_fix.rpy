@@ -21,7 +21,7 @@ label .testing:
     "Compiling code is a necessary step to run the application in some programming languages, like the one we're using."
     "The problem on big games is that it can take quite a lot of time, esp. after adding new files or other structural changes."
     "Considering the new files I added for the first draft {i}and{/i} the ones added by other programmers that I just retrieved from the latest code changes, the first compilation will be pretty long, probably 3 to 5 minutes."
-    "Fortunately, there are always things to do during the compilation. Some watch videos or read comics, some chat with their colleagues."
+    "Fortunately, there are always things to do during the compilation. Some watch videos or read comics, some chat with their coworkers."
     "Personally, I like reading programming articles or books. I know it sounds crazy inserting more work inside work, but it keeps me in the flow."
 
     pause 0.5
