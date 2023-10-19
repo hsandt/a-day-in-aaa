@@ -43,7 +43,8 @@ label .intro:
 
     pause 0.8
 
-    "Once the editor is ready, it automatically opens the default \"sandbox\" scene: a small 3D map made of a variety of geometrical shapes and enemies. It helps us testing various movements and interactions with the player character."
+    "Once the editor is ready, it automatically opens the default \"sandbox\" scene: a small 3D map made of a variety of geometrical shapes and enemies."
+    "It helps us testing various movements and interactions with the player character."
     "System designer, animators and programmers use the sandbox a lot, whereas level designers and level artists generally work directly on actual game areas."
     "But programmers are probably at the edge of the spectrum due to their extreme needs to test things quickly, and some (like me) exclusively use the sandbox."
     "The good side is that I'm {i}super excited{/i} when I'm testing the actual game — not something many employees would agree with, after spending one or two years in development and repetitive testing."
