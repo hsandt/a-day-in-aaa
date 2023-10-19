@@ -24,7 +24,7 @@ define fast_food_clerk = Character("Fast food clerk", color="#b95c00")
 
 # Center text frame, text lines and window
 define disclaimer = Character(None, window_background=None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5, what_color="#ffffff")
-define credits = Character(None, window_background=None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5, what_color="#ffffff")
+define credits_char = Character(None, window_background=None, what_xalign=0.5, what_text_align=0.5, window_yalign=0.5, what_color="#ffffff")
 
 # Story event flags
 default extensible_architecture = False
