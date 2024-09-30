@@ -84,6 +84,11 @@ label .feature_specs:
     "There are also many special cases or \"edge cases\" not described in the feature specs, so both programmers and designers will have to improvize when they encounter them."
     jump .architecture
 
+# TODO: add Character psychology from Scenes doc:
+# responsibility of architecturing => confidence
+# feature ownership => legitimity to contact people
+# remind of high school and talking to both programmers and plain game lovers
+
 label .architecture:
     "But let's keep the details for later. For now, I'll try to code something simple that does the job in most cases."
     # TODO SFX: add pen SFX

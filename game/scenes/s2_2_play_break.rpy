@@ -49,9 +49,9 @@ label .colleagues_arrive:
 
     pause 1.0
 
-    jump .break_end
+    jump .lunch_break_overtime
 
-label .break_end:
+label .lunch_break_overtime:
     "Before I notice, break time is over, but I haven't finished my game yet. Hard mode sure is tough."
     # INSERT GAME CHOICE HERE on whether to keep playing - for now, auto-choose to continue playing
     "Believing in my incoming victory this time, I push the game a little further. But it's now 14:15 and I'm still far from it."
@@ -66,6 +66,9 @@ label .break_end:
 
     pause 0.5
 
+    jump .break_end
+
+label .break_end:
     play sound audio.sfx.keyboard_typing_weak
     "I reopen Visual Studio, which needs some time to launch. This gives me an opportunity to bother my RTS-enthusiast coworker for some advice."
 
@@ -81,4 +84,4 @@ label .break_end:
 
     # TODO: other devs wearing playing hardcore game?
 
-    jump s4_1
+    jump s3_1
