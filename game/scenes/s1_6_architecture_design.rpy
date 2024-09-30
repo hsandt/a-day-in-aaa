@@ -43,7 +43,8 @@ label .intro:
 
     pause 0.8
 
-    "Once the editor is ready, it automatically opens the default scene: a 3D \"sandbox\" made of a variety of geometrical shapes and enemies. It helps us testing various movements and interactions with the player character."
+    "Once the editor is ready, it automatically opens the default \"sandbox\" scene: a small 3D map made of a variety of geometrical shapes and enemies."
+    "It helps us testing various movements and interactions with the player character."
     "System designer, animators and programmers use the sandbox a lot, whereas level designers and level artists generally work directly on actual game areas."
     "But programmers are probably at the edge of the spectrum due to their extreme needs to test things quickly, and some (like me) exclusively use the sandbox."
     "The good side is that I'm {i}super excited{/i} when I'm testing the actual game — not something many employees would agree with, after spending one or two years in development and repetitive testing."
@@ -77,7 +78,7 @@ label .feature_specs:
 
     # feature specs explanation
     "As the designer goes back to his desk, I notice a new email linking to the \"feature specs\"."
-    "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)"
+    "The feature specs describes the requirements to fulfill to complete a feature (new game mechanic, menu option, etc.)."
     "To be honest, while other development environments may have proper requirements, things are more flexible in video games."
     "It's common that programmers tweak things a bit to make the feature easier to code or extend, as long as designers are okay."
     "There are also many special cases or \"edge cases\" not described in the feature specs, so both programmers and designers will have to improvize when they encounter them."
@@ -87,7 +88,7 @@ label .architecture:
     "But let's keep the details for later. For now, I'll try to code something simple that does the job in most cases."
     # TODO SFX: add pen SFX
     "I grab my notebook (graciously offered by the company), and start sketching some possible ways to implement the feature. As usual, each method has pros and cons..."
-    "Method A: Be specific\nCheck for enemy death or surrender and level directly in code, then play the victory cry and pose if it's high enough."
+    "Method A: Be specific\nCheck for enemy death or surrender and level directly in code, then play the victory cry and pose if conditions are met."
     "It should be faster to code (probably finished by the end of the day), but less flexible."
     "Method B: Be generic\nCheck for generic condition on enemy status, then play an arbitrary voice and animation if the condition is verified."
     # Below, MC underestimates the actual time the generic solution will take. In reality, it will take 2x more time than expected.

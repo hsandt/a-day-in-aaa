@@ -133,3 +133,8 @@ CubismSdkForNative-4-*.zip
 
 # Sublime Text
 *.sublime-workspace
+
+
+# PAID ASSETS
+
+/game/wordcounter+.rpy

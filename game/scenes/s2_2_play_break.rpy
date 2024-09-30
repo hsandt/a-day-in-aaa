@@ -29,7 +29,7 @@ label .play_game:
     jump .colleagues_arrive
 
 label .colleagues_arrive:
-    "As the end of lunch break draws nearer, I see more and more colleagues coming back to the room."
+    "As the end of lunch break draws nearer, I see more and more coworkers coming back to the room."
 
     ui_programmer "So, how was the gym?"
     level_artist "It was fine, but the leg machine was broken. {i}Again{/i}."
@@ -67,11 +67,11 @@ label .break_end:
     pause 0.5
 
     play sound audio.sfx.keyboard_typing_weak
-    "I reopen Visual Studio, which needs some time to launch. This gives me an opportunity to bother my RTS-enthusiast colleague for some advice."
+    "I reopen Visual Studio, which needs some time to launch. This gives me an opportunity to bother my RTS-enthusiast coworker for some advice."
 
     mc "I couldn't beat AI in Hard."
 
-    "My colleague sighs, looking terribly disappointed."
+    "My coworker sighs, looking terribly disappointed."
 
     junior_gd "Okay, what's your build order?"
     mc "My build... ?{w=0.8} Oh, right.{w=0.8} Er...{w=0.8} Barracks...{w=0.8} Supply Depot...{w=0.8} Refinery... ?"

@@ -2,7 +2,7 @@
 
 An entry for [NaNoRenO 2023](https://itch.io/jam/nanoreno2023). *A Day in AAA* is a visual novel about a game programmer working in AAA company.
 
-See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playtesting) and submission page (INCOMING)
+See [game page](https://komehara.itch.io/a-day-in-aaa) and [submission page](https://itch.io/jam/nanoreno2023/rate/1960184)
 
 ## Progress
 
@@ -11,6 +11,8 @@ See [game page](https://komehara.itch.io/a-day-in-aaa) (needs password for playt
 * Custom backgrounds
 * Custom ambient sounds and SFX
 * Custom GUI (WIP)
+
+This v1 contains the most important scenes to make the day meaningful, but I have prepared many additional scenes for future versions. If the game catches enough interest, I'll keep working to add more scenes (and also polish the UI). Otherwise, I'll probably add some stuff anyway, but at my own pace.
 
 ## Tools
 

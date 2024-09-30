@@ -20,7 +20,7 @@ label .work:
 
     pause 0.5
 
-    "I starting checking my personal emails, but there are too many coming every day. As ironic as it sounds, I manage to read all of them at the office, but I can't keep up with my personal inbox."
+    "I start checking my personal emails, but there are too many coming every day. As ironic as it sounds, I manage to read all of them at the office, but I can't keep up with my personal inbox."
     "And now, it's time to work on my personal game projects!"
 
     "It wouldn't be exaggerated to say that a second day starts for me around 19:45."
@@ -34,7 +34,7 @@ label .work:
     "I find an annoying bug: when I spawn an enemy, it flashes at the wrong position before moving to the correct one."
 
     play sound audio.sfx.keyboard_typing_weak
-    "Hail the Internet! I find a few other users who suffered the same symptoms, and apply their solution (or rather their \"workaround\")."
+    "Hail the Internet! I find a few other users who suffered the same symptoms, and apply their solution. Or rather their \"workaround\" (a temporary fix to allow the developer to keep working until a better solution is found)."
     "A little later, as I'm editing the level, the editor suddenly crashes."
 
     play sound audio.sfx.keyboard_typing_weak
