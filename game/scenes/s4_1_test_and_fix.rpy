@@ -7,13 +7,6 @@ label .intro:
 
 label .testing:
     play sound audio.sfx.keyboard_typing_strong
-    "Back to work, I get the latest code changes in the project to make sure I'm up-to-date. I then start coding the victory cry, using the method I considered this morning."
-
-    if extensible_architecture:
-        "Writing a generic system will take a few days and require a big code change at once, but it generally makes designers and other programmers happy."
-        "Plus, nothing prevents me from adding elements bit by bit, like the victory cry first, and then the pose."
-    else:
-        "I'll just add minimal code to get the job done, so that means less stress and a smaller code change to have reviewed by other programmers."
 
     pause 0.5
 
